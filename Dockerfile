@@ -23,10 +23,6 @@ WORKDIR /app
 
 RUN solc-select install 0.8.20 && solc-select use 0.8.20
 
-# Clone the Slither GitHub repository for research purposes
-RUN git clone https://github.com/mm587517/slither-CSE-5472.git
-
-
 # Copy your smart contract code into the container
 COPY ./contracts /app/contracts
 
