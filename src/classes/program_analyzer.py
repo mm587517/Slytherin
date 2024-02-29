@@ -38,4 +38,4 @@ class ProgramAnalyzer:
                                 test_file_generator=test_file_generator,
                             )
         if flag:
-            logger.info(f"Created {test_file_generator.output_filename}")
+            logger.success(f"Created {test_file_generator.output_filename}")

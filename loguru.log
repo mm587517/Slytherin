@@ -53,3 +53,72 @@
 2024-02-29 11:18:59.833 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
 2024-02-29 11:19:04.839 | INFO     | echidna_runner:run_echidna:25 - Sent ESC character signal to Echidna process.
 2024-02-29 11:19:04.839 | INFO     | echidna_runner:run_echidna:25 - Sent ESC character signal to Echidna process.
+2024-02-29 11:25:23.156 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - a + b
+2024-02-29 11:25:23.156 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - a + b
+2024-02-29 11:25:23.156 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - a + b
+2024-02-29 11:25:23.156 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - a
+2024-02-29 11:25:23.156 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - a
+2024-02-29 11:25:23.156 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - a
+2024-02-29 11:25:23.157 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - b
+2024-02-29 11:25:23.157 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - b
+2024-02-29 11:25:23.157 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - b
+2024-02-29 11:25:23.157 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - x + a
+2024-02-29 11:25:23.157 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - x + a
+2024-02-29 11:25:23.157 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - x + a
+2024-02-29 11:25:23.157 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - x
+2024-02-29 11:25:23.157 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - x
+2024-02-29 11:25:23.157 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - x
+2024-02-29 11:25:23.157 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - a
+2024-02-29 11:25:23.157 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - a
+2024-02-29 11:25:23.157 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - a
+2024-02-29 11:25:23.158 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 11:25:23.158 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 11:25:23.158 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 11:25:43.157 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - uint128(a) + b
+2024-02-29 11:25:43.157 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - uint128(a) + b
+2024-02-29 11:25:43.157 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - uint128(a) + b
+2024-02-29 11:25:43.158 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - uint128(a)
+2024-02-29 11:25:43.158 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - uint128(a)
+2024-02-29 11:25:43.158 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - uint128(a)
+2024-02-29 11:25:43.158 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - b
+2024-02-29 11:25:43.158 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - b
+2024-02-29 11:25:43.158 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - b
+2024-02-29 11:26:24.584 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - uint128(a) + b -- <class 'slither.core.expressions.binary_operation.BinaryOperation'>
+2024-02-29 11:26:24.584 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - uint128(a) + b -- <class 'slither.core.expressions.binary_operation.BinaryOperation'>
+2024-02-29 11:26:24.584 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - uint128(a) + b -- <class 'slither.core.expressions.binary_operation.BinaryOperation'>
+2024-02-29 11:26:24.585 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - uint128(a) -- <class 'slither.core.expressions.type_conversion.TypeConversion'>
+2024-02-29 11:26:24.585 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - uint128(a) -- <class 'slither.core.expressions.type_conversion.TypeConversion'>
+2024-02-29 11:26:24.585 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - uint128(a) -- <class 'slither.core.expressions.type_conversion.TypeConversion'>
+2024-02-29 11:26:24.585 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - b -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-02-29 11:26:24.585 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - b -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-02-29 11:26:24.585 | DEBUG    | expression_analyzer:find_expression_elementary_type:45 - b -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-02-29 11:30:12.783 | DEBUG    | expression_analyzer:find_expression_elementary_type:47 - a + b -- <class 'slither.core.expressions.binary_operation.BinaryOperation'>
+2024-02-29 11:30:12.783 | DEBUG    | expression_analyzer:find_expression_elementary_type:47 - a + b -- <class 'slither.core.expressions.binary_operation.BinaryOperation'>
+2024-02-29 11:30:12.783 | DEBUG    | expression_analyzer:find_expression_elementary_type:47 - a + b -- <class 'slither.core.expressions.binary_operation.BinaryOperation'>
+2024-02-29 11:30:12.783 | DEBUG    | expression_analyzer:find_expression_elementary_type:47 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-02-29 11:30:12.783 | DEBUG    | expression_analyzer:find_expression_elementary_type:47 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-02-29 11:30:12.783 | DEBUG    | expression_analyzer:find_expression_elementary_type:47 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-02-29 11:30:12.783 | DEBUG    | expression_analyzer:find_expression_elementary_type:47 - b -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-02-29 11:30:12.783 | DEBUG    | expression_analyzer:find_expression_elementary_type:47 - b -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-02-29 11:30:12.783 | DEBUG    | expression_analyzer:find_expression_elementary_type:47 - b -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-02-29 11:30:12.784 | DEBUG    | expression_analyzer:find_expression_elementary_type:47 - x + a -- <class 'slither.core.expressions.binary_operation.BinaryOperation'>
+2024-02-29 11:30:12.784 | DEBUG    | expression_analyzer:find_expression_elementary_type:47 - x + a -- <class 'slither.core.expressions.binary_operation.BinaryOperation'>
+2024-02-29 11:30:12.784 | DEBUG    | expression_analyzer:find_expression_elementary_type:47 - x + a -- <class 'slither.core.expressions.binary_operation.BinaryOperation'>
+2024-02-29 11:30:12.784 | DEBUG    | expression_analyzer:find_expression_elementary_type:47 - x -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-02-29 11:30:12.784 | DEBUG    | expression_analyzer:find_expression_elementary_type:47 - x -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-02-29 11:30:12.784 | DEBUG    | expression_analyzer:find_expression_elementary_type:47 - x -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-02-29 11:30:12.784 | DEBUG    | expression_analyzer:find_expression_elementary_type:47 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-02-29 11:30:12.784 | DEBUG    | expression_analyzer:find_expression_elementary_type:47 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-02-29 11:30:12.784 | DEBUG    | expression_analyzer:find_expression_elementary_type:47 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-02-29 11:30:12.784 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 11:30:12.784 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 11:30:12.784 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 11:30:25.242 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 11:30:25.242 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 11:30:25.242 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 11:30:54.158 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 11:30:54.158 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 11:30:54.158 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 11:35:47.773 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 11:35:47.773 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 11:35:47.773 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol

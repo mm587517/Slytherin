@@ -6,10 +6,16 @@ from slither.core.expressions.tuple_expression import TupleExpression
 from slither.core.expressions.literal import Literal
 from slither.core.expressions.identifier import Identifier
 from slither.core.expressions.expression import Expression
+from slither.core.expressions.type_conversion import TypeConversion
 from slither.core.solidity_types.type import Type
 from slither.core.variables.variable import Variable
 
+
+from loguru import logger
+
 from test_file_generator import TestFileGenerator
+
+logger.add("loguru.log")
 
 
 class ExpressionAnalyzer:
@@ -37,6 +43,9 @@ class ExpressionAnalyzer:
     def find_expression_elementary_type(
         cls, expression: Expression, test_file_generator: TestFileGenerator
     ) -> Type:
+
+        # logger.debug(f"{expression} -- {type(expression)}")
+
         if isinstance(expression, BinaryOperation):
             left_expresssion = expression.expression_left
             right_expression = expression.expression_right
