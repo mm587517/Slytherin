@@ -1,0 +1,23 @@
+[2024-02-29 08:58:24.97] Compiling output/test.experiment.sol... Done! (0.198760132s)
+Analyzing contract: /home/marcelo/OSU/courses/CSE-5472-InfoSec-Project/output/test.experiment.sol:Flaw
+[2024-02-29 08:58:25.17] Running slither on output/test.experiment.sol... Done! (0.314355658s)
+[2024-02-29 08:58:25.49] [Worker 0] Test flaw() falsified!
+[2024-02-29 08:58:25.51] [Worker 0] New coverage: 105 instr, 1 contracts, 1 seqs in corpus
+[2024-02-29 08:58:25.61] [Worker 0] New coverage: 108 instr, 1 contracts, 2 seqs in corpus
+[2024-02-29 08:58:28.49] [status] tests: 1/2, fuzzing: 28749/50000, values: [], cov: 108, corpus: 2
+[2024-02-29 08:58:30.68] [Worker 0] Test limit reached. Stopping.
+[2024-02-29 08:58:30.68] [status] tests: 1/2, fuzzing: 50080/50000, values: [], cov: 108, corpus: 2
+flaw(): failed!💥  
+  Call sequence:
+    flaw()
+
+Traces: 
+
+AssertionFailed(..): passing
+
+
+Unique instructions: 108
+Unique codehashes: 1
+Corpus size: 2
+Seed: 629891964051998452
+

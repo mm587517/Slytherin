@@ -1,1 +1,15 @@
 2024-02-28 17:49:44.055 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 08:28:56.026 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 08:28:56.026 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 08:28:56.026 | ERROR    | __main__:main:28 - Echidna executable not found. Please make sure Echidna is installed and added to your PATH.
+2024-02-29 08:28:56.026 | ERROR    | __main__:main:28 - Echidna executable not found. Please make sure Echidna is installed and added to your PATH.
+2024-02-29 08:30:28.393 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 08:30:28.393 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 08:30:28.394 | ERROR    | __main__:main:28 - Echidna executable not found. Please make sure Echidna is installed and added to your PATH.
+2024-02-29 08:30:28.394 | ERROR    | __main__:main:28 - Echidna executable not found. Please make sure Echidna is installed and added to your PATH.
+2024-02-29 08:37:52.278 | ERROR    | __main__:main:28 - Echidna executable not found. Please make sure Echidna is installed and added to your PATH.
+2024-02-29 08:37:52.278 | ERROR    | __main__:main:28 - Echidna executable not found. Please make sure Echidna is installed and added to your PATH.
+2024-02-29 08:54:58.985 | ERROR    | __main__:run_echidna:67 - Echidna executable not found. Please make sure Echidna is installed and added to your PATH.
+2024-02-29 08:55:17.118 | INFO     | __main__:run_echidna:62 - Echidna process terminated after 10 seconds.
+2024-02-29 08:57:16.595 | INFO     | __main__:run_echidna:62 - Sent ESC character signal to Echidna process.
+2024-02-29 08:58:34.973 | INFO     | __main__:run_echidna:66 - Sent ESC character signal to Echidna process.

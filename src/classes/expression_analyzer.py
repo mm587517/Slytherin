@@ -54,7 +54,7 @@ class ExpressionAnalyzer:
                 expression.type,
             )
 
-            assert_string = f"assert ({left_expresssion} <= type({winner}).max {inverse_operation} {right_expression});"
+            assert_string = f"assert ({left_expresssion} <= type({winner}).max {inverse_operation} {right_expression}); #slytherin"
             test_file_generator.write_line(
                 target=str(expression), line_to_insert=assert_string
             )
