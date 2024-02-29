@@ -11,6 +11,7 @@ class TestFileGenerator:
         )
 
         self.create_output_file()
+        self.number = 1
 
     def create_output_file(self) -> None:
         with open(self.filename, "r") as f_in, open(self.output_filename, "w") as f_out:
@@ -32,7 +33,8 @@ class TestFileGenerator:
                     # Maintain the same leading whitespaces
                     leading_spaces = len(line) - len(line.lstrip())
                     whitespace = " " * leading_spaces
-                    f_out.write(f"{whitespace}{line_to_insert}\n")
+                    f_out.write(f"{whitespace}{line_to_insert} {self.number}\n")
+                    self.number += 1
                 f_out.write(line)
             import os
 

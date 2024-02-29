@@ -12,17 +12,15 @@ class EchidnaRunner:
         try:
             # Open log file for writing
             with open("echidna_output.log", "w") as output_file:
-                # Run Echidna command with --test-mode assertion flag, redirecting output to file
+
                 echidna_process = subprocess.Popen(
                     ["echidna", "--test-mode", "assertion", self.file_path],
                     stdout=output_file,
                     stderr=subprocess.STDOUT,  # Merge stderr into stdout
                 )
 
-                # Wait for 10 seconds
-                time.sleep(10)
+                time.sleep(5)
 
-                # Send the ESC character signal to the process
                 echidna_process.send_signal(subprocess.signal.SIGINT)
                 logger.info("Sent ESC character signal to Echidna process.")
 
