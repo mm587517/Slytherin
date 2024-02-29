@@ -68,6 +68,19 @@ def HandleBinaryOperation(expression, variables):
 		return FindLargest(left_type, right_type)
 	return left_type
 
+def HandleTupleExpression(tuple, variables):
+	tuple_list = tuple.expressions
+	for tuple in tuple_list:
+		if isinstance(tuple, BinaryOperation):
+			return HandleBinaryOperation(tuple, variables)
+		elif isinstance(tuple, Literal):
+			return tuple.type
+		elif isinstance(tuple, Identifier):
+			return tuple.value.type
+		elif isinstance(tuple, TupleExpression):
+			return HandleTupleExpression(tuple, variables)
+	return None
+
 def HandleAssignmentRight(right, variables):
 	if isinstance(right, Literal):
 		print('\t\tAssignment Operation -> No Warnings')
@@ -75,9 +88,9 @@ def HandleAssignmentRight(right, variables):
 	elif isinstance(right, BinaryOperation):
 		return HandleBinaryOperation(right, variables)
 	elif isinstance(right, Identifier):
-		return print('\t\tRIGHT IDENTIFIER')
+		return right.value.type
 	elif isinstance(right, TupleExpression):
-		return print('\t\tTUPLE EXPRESSION')
+		return HandleTupleExpression(right, variables)
 
 def IterateContract(slither_instance):
 	for contract in slither_instance.contracts:
