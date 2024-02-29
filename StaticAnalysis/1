@@ -1,0 +1,14 @@
+from slither.slither import Slither
+from slither.core.expression.binary_operation import BinaryOperation
+from slither.core.expressions.assignment_operation import AssignmentOperation
+
+def FindBinaryOperations(expression):
+	if isinstance(expression, BinaryOperation):
+		print('Binary Operation Type: ' + expression.type)
+		print('Left Operand: ' + expression.expression_left)
+		print('Right Operang: ' + expression.expression_right)
+		
+		if isinstance(expression.expression_right, BinaryOperation):
+			FindBinaryOperations(expression.expression_left)
+		if isinstance(expression.expression_left, BinaryOperation):
+			FindBinaryOperations(expression.expression_right)
