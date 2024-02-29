@@ -13,3 +13,23 @@
 2024-02-29 08:55:17.118 | INFO     | __main__:run_echidna:62 - Echidna process terminated after 10 seconds.
 2024-02-29 08:57:16.595 | INFO     | __main__:run_echidna:62 - Sent ESC character signal to Echidna process.
 2024-02-29 08:58:34.973 | INFO     | __main__:run_echidna:66 - Sent ESC character signal to Echidna process.
+2024-02-29 10:37:02.502 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 10:37:02.502 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 10:37:12.512 | INFO     | echidna_runner:run_echidna:27 - Sent ESC character signal to Echidna process.
+2024-02-29 10:37:12.512 | INFO     | echidna_runner:run_echidna:27 - Sent ESC character signal to Echidna process.
+2024-02-29 10:37:23.204 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 10:37:23.204 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 10:37:33.214 | INFO     | echidna_runner:run_echidna:27 - Sent ESC character signal to Echidna process.
+2024-02-29 10:37:33.214 | INFO     | echidna_runner:run_echidna:27 - Sent ESC character signal to Echidna process.
+2024-02-29 10:38:25.717 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 10:38:25.717 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 10:38:35.728 | INFO     | echidna_runner:run_echidna:27 - Sent ESC character signal to Echidna process.
+2024-02-29 10:38:35.728 | INFO     | echidna_runner:run_echidna:27 - Sent ESC character signal to Echidna process.
+2024-02-29 10:38:44.511 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 10:38:44.511 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 10:38:54.521 | INFO     | echidna_runner:run_echidna:27 - Sent ESC character signal to Echidna process.
+2024-02-29 10:38:54.521 | INFO     | echidna_runner:run_echidna:27 - Sent ESC character signal to Echidna process.
+2024-02-29 10:39:41.096 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 10:39:41.096 | INFO     | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 10:39:51.104 | INFO     | echidna_runner:run_echidna:27 - Sent ESC character signal to Echidna process.
+2024-02-29 10:39:51.104 | INFO     | echidna_runner:run_echidna:27 - Sent ESC character signal to Echidna process.

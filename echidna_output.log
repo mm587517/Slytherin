@@ -1,12 +1,13 @@
-[2024-02-29 08:58:24.97] Compiling output/test.experiment.sol... Done! (0.198760132s)
-Analyzing contract: /home/marcelo/OSU/courses/CSE-5472-InfoSec-Project/output/test.experiment.sol:Flaw
-[2024-02-29 08:58:25.17] Running slither on output/test.experiment.sol... Done! (0.314355658s)
-[2024-02-29 08:58:25.49] [Worker 0] Test flaw() falsified!
-[2024-02-29 08:58:25.51] [Worker 0] New coverage: 105 instr, 1 contracts, 1 seqs in corpus
-[2024-02-29 08:58:25.61] [Worker 0] New coverage: 108 instr, 1 contracts, 2 seqs in corpus
-[2024-02-29 08:58:28.49] [status] tests: 1/2, fuzzing: 28749/50000, values: [], cov: 108, corpus: 2
-[2024-02-29 08:58:30.68] [Worker 0] Test limit reached. Stopping.
-[2024-02-29 08:58:30.68] [status] tests: 1/2, fuzzing: 50080/50000, values: [], cov: 108, corpus: 2
+[2024-02-29 10:39:41.14] Compiling output/test.experiment.sol... Done! (0.257823s)
+Analyzing contract: /Users/marce/Documents/OSU/courses/CSE-5472-InfoSec-Project/output/test.experiment.sol:Flaw
+[2024-02-29 10:39:41.42] Running slither on output/test.experiment.sol... Done! (0.74746s)
+[2024-02-29 10:39:42.17] [Worker 0] Test flaw() falsified!
+[2024-02-29 10:39:42.18] [Worker 0] New coverage: 105 instr, 1 contracts, 1 seqs in corpus
+[2024-02-29 10:39:42.20] [Worker 0] New coverage: 108 instr, 1 contracts, 2 seqs in corpus
+[2024-02-29 10:39:43.27] [Worker 0] New coverage: 108 instr, 1 contracts, 3 seqs in corpus
+[2024-02-29 10:39:45.17] [status] tests: 1/2, fuzzing: 31514/50000, values: [], cov: 108, corpus: 3
+[2024-02-29 10:39:46.94] [Worker 0] Test limit reached. Stopping.
+[2024-02-29 10:39:46.94] [status] tests: 1/2, fuzzing: 50037/50000, values: [], cov: 108, corpus: 3
 flaw(): failed!💥  
   Call sequence:
     flaw()
@@ -18,6 +19,6 @@ AssertionFailed(..): passing
 
 Unique instructions: 108
 Unique codehashes: 1
-Corpus size: 2
-Seed: 629891964051998452
+Corpus size: 3
+Seed: 9002141417913172696
 

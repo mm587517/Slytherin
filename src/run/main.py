@@ -16,7 +16,7 @@ def main(file_path):
     program_analyzer = ProgramAnalyzer(file_path)
     program_analyzer.analyze()
 
-    echidna = EchidnaRunner(file_path="/output/test.experiment.sol")
+    echidna = EchidnaRunner(file_path="output/test.experiment.sol")
     echidna.run_echidna()
 
 
