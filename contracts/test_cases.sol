@@ -160,4 +160,58 @@ contract TestCases {
         return x;
     }
 
+    // Subtraction test case
+    function test16() public pure returns (uint64) {
+        uint64 a = 0;
+        uint64 b = type(uint64).max;
+
+        uint64 x = a - b;
+
+        return x;
+    }
+
+    // Subtraction test case -- overflow?
+    function test17() public pure returns (uint64) {
+        uint64 a = 0;
+        uint64 b = type(uint64).max;
+        uint64 c = type(uint64).max;
+
+        uint64 x = (a - b) - c;
+
+        return x;
+    }
+
+    // Subtraction test case -- overflow
+    function test18() public pure returns (uint64) {
+        uint64 a = 0;
+        uint64 b = type(uint64).max;
+        uint64 c = type(uint64).max;
+
+        uint64 x = (a - b) * c;
+
+        return x;
+    }
+
+    // Subtraction test case -- should cause warning
+    function test19() public pure returns (uint128) {
+        uint64 a = 0;
+        uint64 b = type(uint64).max;
+        uint64 c = type(uint64).max;
+
+        uint128 x = (a - b) * c;
+
+        return x;
+    }
+
+    // Subtraction test case -- should cause warning
+    function test20() public pure returns (uint128) {
+        uint64 a = 0;
+        uint64 b = type(uint64).max;
+        uint64 c = type(uint64).max;
+
+        uint128 x = (a - b) / c;
+
+        return x;
+    }
+
 }
