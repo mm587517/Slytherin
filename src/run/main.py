@@ -12,12 +12,22 @@ from echidna_runner import EchidnaRunner
 logger.add("loguru.log")
 
 
+def find_assert_slytherin(filename):
+    try:
+        with open(filename, "r") as file:
+            for line in file:
+                if "assert" in line and "slytherin" in line:
+                    print(line.strip())
+    except FileNotFoundError:
+        print(f"File '{filename}' not found.")
+
+
 def main(file_path):
     program_analyzer = ProgramAnalyzer(file_path)
     program_analyzer.analyze()
 
-    # echidna = EchidnaRunner(file_path="output/test.experiment.sol")
-    # echidna.run_echidna()
+    echidna = EchidnaRunner(file_path="output/test.experiment.sol")
+    echidna.run_echidna()
 
 
 if __name__ == "__main__":

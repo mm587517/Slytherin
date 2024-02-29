@@ -10,6 +10,7 @@ from slither.core.expressions.type_conversion import TypeConversion
 from slither.core.solidity_types.type import Type
 from slither.core.variables.variable import Variable
 
+from IPython import embed
 
 from loguru import logger
 

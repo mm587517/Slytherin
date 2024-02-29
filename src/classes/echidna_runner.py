@@ -1,6 +1,5 @@
 import subprocess
 from loguru import logger
-import threading
 import time
 
 
@@ -11,7 +10,7 @@ class EchidnaRunner:
     def run_echidna(self):
         try:
             # Open log file for writing
-            with open("echidna_output.log", "w") as output_file:
+            with open("echidna_output.log", "a") as output_file:
 
                 echidna_process = subprocess.Popen(
                     ["echidna", "--test-mode", "assertion", self.file_path],
@@ -19,7 +18,7 @@ class EchidnaRunner:
                     stderr=subprocess.STDOUT,  # Merge stderr into stdout
                 )
 
-                time.sleep(5)
+                time.sleep(10)
 
                 echidna_process.send_signal(subprocess.signal.SIGINT)
                 logger.info("Sent ESC character signal to Echidna process.")
@@ -30,11 +29,3 @@ class EchidnaRunner:
             logger.error(
                 "Echidna executable not found. Please make sure Echidna is installed and added to your PATH."
             )
-
-    def start_echidna_thread(self):
-        # Run Echidna in a separate thread
-        echidna_thread = threading.Thread(target=self.run_echidna)
-        echidna_thread.start()
-
-        # Wait for the thread to finish
-        echidna_thread.join()
