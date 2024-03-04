@@ -2,8 +2,7 @@ import sys
 from slither.slither import Slither
 from slither.core.expressions.binary_operation import BinaryOperation
 from slither.core.expressions.assignment_operation import AssignmentOperation
-from helper_functions import FindBinaryOperations
-from helper_functions import IterateContract
+from helper_functions_2 import IterateContract
 from print_helpers import PrintMsg
 
 def main():
