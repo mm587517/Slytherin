@@ -18,5 +18,6 @@ for i in range(len(log_data) - 1):
         pairs.append((line1, line2))
 
 # Print pairs
-for pair in pairs:
-    print(pair)
+for index, pair in enumerate(pairs):
+    if "failed!💥" in pair[1]:
+        print(index)

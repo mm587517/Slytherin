@@ -158,3 +158,180 @@
 2024-02-29 12:43:38.153 | INFO     | echidna_runner:run_echidna:24 - Sent ESC character signal to Echidna process.
 2024-02-29 12:43:38.153 | INFO     | echidna_runner:run_echidna:24 - Sent ESC character signal to Echidna process.
 2024-02-29 12:43:38.153 | INFO     | echidna_runner:run_echidna:24 - Sent ESC character signal to Echidna process.
+2024-02-29 13:41:18.880 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 13:41:18.880 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 13:41:18.880 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 13:41:28.889 | INFO     | echidna_runner:run_echidna:24 - Sent ESC character signal to Echidna process.
+2024-02-29 13:41:28.889 | INFO     | echidna_runner:run_echidna:24 - Sent ESC character signal to Echidna process.
+2024-02-29 13:41:28.889 | INFO     | echidna_runner:run_echidna:24 - Sent ESC character signal to Echidna process.
+2024-02-29 14:01:21.636 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:01:21.636 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:01:21.636 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:01:31.640 | INFO     | echidna_runner:run_echidna:24 - Sent ESC character signal to Echidna process.
+2024-02-29 14:01:31.640 | INFO     | echidna_runner:run_echidna:24 - Sent ESC character signal to Echidna process.
+2024-02-29 14:01:31.640 | INFO     | echidna_runner:run_echidna:24 - Sent ESC character signal to Echidna process.
+2024-02-29 14:02:38.686 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:02:38.686 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:02:38.686 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:02:48.694 | INFO     | echidna_runner:run_echidna:24 - Sent ESC character signal to Echidna process.
+2024-02-29 14:02:48.694 | INFO     | echidna_runner:run_echidna:24 - Sent ESC character signal to Echidna process.
+2024-02-29 14:02:48.694 | INFO     | echidna_runner:run_echidna:24 - Sent ESC character signal to Echidna process.
+2024-02-29 14:03:02.192 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:03:02.192 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:03:02.192 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:03:12.185 | INFO     | echidna_runner:run_echidna:24 - Sent ESC character signal to Echidna process.
+2024-02-29 14:03:12.185 | INFO     | echidna_runner:run_echidna:24 - Sent ESC character signal to Echidna process.
+2024-02-29 14:03:12.185 | INFO     | echidna_runner:run_echidna:24 - Sent ESC character signal to Echidna process.
+2024-02-29 14:04:37.237 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:04:37.237 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:04:37.237 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:04:47.245 | INFO     | echidna_runner:run_echidna:24 - Sent ESC character signal to Echidna process.
+2024-02-29 14:04:47.245 | INFO     | echidna_runner:run_echidna:24 - Sent ESC character signal to Echidna process.
+2024-02-29 14:04:47.245 | INFO     | echidna_runner:run_echidna:24 - Sent ESC character signal to Echidna process.
+2024-02-29 14:04:48.868 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:04:48.868 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:04:48.868 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:05:00.029 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:05:00.029 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:05:00.029 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:05:10.038 | INFO     | echidna_runner:run_echidna:24 - Sent ESC character signal to Echidna process.
+2024-02-29 14:05:10.038 | INFO     | echidna_runner:run_echidna:24 - Sent ESC character signal to Echidna process.
+2024-02-29 14:05:10.038 | INFO     | echidna_runner:run_echidna:24 - Sent ESC character signal to Echidna process.
+2024-02-29 14:05:47.008 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:05:47.008 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:05:47.008 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:06:31.078 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:06:31.078 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-02-29 14:06:31.078 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-03-01 09:40:47.184 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-03-01 09:40:47.184 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-03-01 09:40:47.184 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-04-12 10:09:11.566 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-04-12 10:09:11.566 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-04-12 10:09:11.566 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-04-12 10:15:43.331 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-04-12 10:15:43.331 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-04-12 10:15:43.331 | SUCCESS  | program_analyzer:analyze:41 - Created output/test.experiment.sol
+2024-04-12 10:22:30.538 | SUCCESS  | program_analyzer:analyze:46 - Created output/test.experiment.sol
+2024-04-12 10:22:30.538 | SUCCESS  | program_analyzer:analyze:46 - Created output/test.experiment.sol
+2024-04-12 10:22:30.538 | SUCCESS  | program_analyzer:analyze:46 - Created output/test.experiment.sol
+2024-04-12 10:42:27.734 | DEBUG    | expression_analyzer:contains_binary_operation:112 - a + b -- <class 'slither.core.expressions.binary_operation.BinaryOperation'>
+2024-04-12 10:42:27.734 | DEBUG    | expression_analyzer:contains_binary_operation:112 - a + b -- <class 'slither.core.expressions.binary_operation.BinaryOperation'>
+2024-04-12 10:42:27.734 | DEBUG    | expression_analyzer:contains_binary_operation:112 - a + b -- <class 'slither.core.expressions.binary_operation.BinaryOperation'>
+2024-04-12 10:45:49.784 | DEBUG    | expression_analyzer:contains_binary_operation:115 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:45:49.784 | DEBUG    | expression_analyzer:contains_binary_operation:115 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:45:49.784 | DEBUG    | expression_analyzer:contains_binary_operation:115 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:45:49.787 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 3 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:45:49.787 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 3 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:45:49.787 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 3 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:45:49.788 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 5 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:45:49.788 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 5 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:45:49.788 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 5 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:45:49.788 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:45:49.788 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:45:49.788 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:45:49.788 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:45:49.788 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:45:49.788 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:45:49.790 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 12345 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:45:49.790 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 12345 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:45:49.790 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 12345 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:45:49.792 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 1e18 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:45:49.792 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 1e18 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:45:49.792 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 1e18 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:45:49.792 | DEBUG    | expression_analyzer:contains_binary_operation:115 - x -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:45:49.792 | DEBUG    | expression_analyzer:contains_binary_operation:115 - x -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:45:49.792 | DEBUG    | expression_analyzer:contains_binary_operation:115 - x -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:46:14.695 | DEBUG    | expression_analyzer:contains_binary_operation:115 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:46:14.695 | DEBUG    | expression_analyzer:contains_binary_operation:115 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:46:14.695 | DEBUG    | expression_analyzer:contains_binary_operation:115 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:46:14.697 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 3 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:46:14.697 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 3 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:46:14.697 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 3 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:46:14.699 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 5 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:46:14.699 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 5 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:46:14.699 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 5 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:46:14.699 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:46:14.699 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:46:14.699 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:46:14.699 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:46:14.699 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:46:14.699 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:46:14.701 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 12345 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:46:14.701 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 12345 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:46:14.701 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 12345 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:46:14.703 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 1e18 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:46:14.703 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 1e18 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:46:14.703 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 1e18 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:46:14.703 | DEBUG    | expression_analyzer:contains_binary_operation:115 - x -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:46:14.703 | DEBUG    | expression_analyzer:contains_binary_operation:115 - x -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:46:14.703 | DEBUG    | expression_analyzer:contains_binary_operation:115 - x -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:49:52.720 | DEBUG    | expression_analyzer:contains_binary_operation:115 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:49:52.720 | DEBUG    | expression_analyzer:contains_binary_operation:115 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:49:52.720 | DEBUG    | expression_analyzer:contains_binary_operation:115 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:49:52.723 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 3 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:49:52.723 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 3 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:49:52.723 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 3 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:49:52.724 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 5 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:49:52.724 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 5 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:49:52.724 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 5 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:49:52.724 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:49:52.724 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:49:52.724 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:49:52.724 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:49:52.724 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:49:52.724 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:49:52.726 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 12345 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:49:52.726 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 12345 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:49:52.726 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 12345 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:49:52.728 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 1e18 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:49:52.728 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 1e18 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:49:52.728 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 1e18 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:49:52.728 | DEBUG    | expression_analyzer:contains_binary_operation:115 - x -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:49:52.728 | DEBUG    | expression_analyzer:contains_binary_operation:115 - x -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:49:52.728 | DEBUG    | expression_analyzer:contains_binary_operation:115 - x -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:50:51.099 | DEBUG    | expression_analyzer:contains_binary_operation:115 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:50:51.099 | DEBUG    | expression_analyzer:contains_binary_operation:115 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:50:51.099 | DEBUG    | expression_analyzer:contains_binary_operation:115 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:50:51.101 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 3 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:50:51.101 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 3 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:50:51.101 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 3 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:50:51.103 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 5 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:50:51.103 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 5 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:50:51.103 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 5 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:50:51.103 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:50:51.103 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:50:51.103 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:50:51.103 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:50:51.103 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:50:51.103 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:50:51.105 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 12345 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:50:51.105 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 12345 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:50:51.105 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 12345 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:50:51.107 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 1e18 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:50:51.107 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 1e18 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:50:51.107 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 1e18 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:50:51.107 | DEBUG    | expression_analyzer:contains_binary_operation:115 - x -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:50:51.107 | DEBUG    | expression_analyzer:contains_binary_operation:115 - x -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:50:51.107 | DEBUG    | expression_analyzer:contains_binary_operation:115 - x -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:51:36.770 | DEBUG    | expression_analyzer:contains_binary_operation:115 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:51:36.770 | DEBUG    | expression_analyzer:contains_binary_operation:115 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:51:36.770 | DEBUG    | expression_analyzer:contains_binary_operation:115 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:51:36.772 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 3 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:51:36.772 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 3 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:51:36.772 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 3 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:51:36.774 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 5 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:51:36.774 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 5 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:51:36.774 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 5 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:51:36.774 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:51:36.774 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:51:36.774 | DEBUG    | expression_analyzer:contains_binary_operation:115 - (a + b) -- <class 'slither.core.expressions.tuple_expression.TupleExpression'>
+2024-04-12 10:51:36.776 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 12345 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:51:36.776 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 12345 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:51:36.776 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 12345 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:51:36.778 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 1e18 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:51:36.778 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 1e18 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:51:36.778 | DEBUG    | expression_analyzer:contains_binary_operation:115 - 1e18 -- <class 'slither.core.expressions.literal.Literal'>
+2024-04-12 10:51:36.778 | DEBUG    | expression_analyzer:contains_binary_operation:115 - x -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:51:36.778 | DEBUG    | expression_analyzer:contains_binary_operation:115 - x -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 10:51:36.778 | DEBUG    | expression_analyzer:contains_binary_operation:115 - x -- <class 'slither.core.expressions.identifier.Identifier'>

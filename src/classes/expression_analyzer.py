@@ -7,14 +7,23 @@ from slither.core.expressions.literal import Literal
 from slither.core.expressions.identifier import Identifier
 from slither.core.expressions.expression import Expression
 from slither.core.expressions.type_conversion import TypeConversion
+from slither.core.expressions.assignment_operation import AssignmentOperation
+from slither.core.expressions.call_expression import CallExpression
+
+
 from slither.core.solidity_types.type import Type
 from slither.core.variables.variable import Variable
+
+
+from slither.core.expressions import *
+
 
 from IPython import embed
 
 from loguru import logger
 
 from test_file_generator import TestFileGenerator
+
 
 logger.add("loguru.log")
 
@@ -90,3 +99,24 @@ class ExpressionAnalyzer:
             return expression.type
 
         return None
+
+    @staticmethod
+    def contains_binary_operation(expression: Expression) -> bool:
+        if isinstance(expression, BinaryOperation):
+            return True
+        if isinstance(expression, AssignmentOperation):
+            return ExpressionAnalyzer.contains_binary_operation(
+                expression=expression.expression_right
+            )
+        if isinstance(expression, CallExpression):
+            for argument in expression.arguments:
+                return ExpressionAnalyzer.contains_binary_operation(expression=argument)
+
+        logger.debug(f"{expression} -- {type(expression)}")
+        if isinstance(expression, TupleExpression):
+            return any(
+                ExpressionAnalyzer.contains_binary_operation(expression=exp)
+                for exp in expression.expressions
+            )
+
+        return False

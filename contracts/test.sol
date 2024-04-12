@@ -1,29 +1,36 @@
 pragma solidity 0.8.2;
 
 
-contract Flaw {
-    function flaw() public pure returns (uint256){
-        uint64 a = 12345;
-        uint64 b = 1e18;
-
-        uint128 x = (a + b);
-
-
-
-        return x;
-    }
-}
-
-
-// contract Flaw {
-//     function flaw() public pure returns (uint256){
+// contract Contract {
+//     function foo() public pure returns (uint256){
 //         uint64 a = 12345;
 //         uint64 b = 1e18;
 
-//         uint128 x = ((a*b) +(a-b));
-
-//         uint128 y = x + a; 
+//         uint128 x = a * b;
 
 //         return x;
 //     }
 // }
+
+
+contract Contract {
+    function callee(uint a) public pure returns (uint256){
+        return a;
+    }
+
+    function caller()public pure returns (uint256) {
+        uint a = 3;
+        uint b = 5;
+        (a+b);
+        return callee(callee(a+b));
+    }
+
+    function foo() public pure returns (uint256){
+        uint64 a = 12345;
+        uint64 b = 1e18;
+
+        uint128 x = a * b;
+
+        return x;
+    }
+}

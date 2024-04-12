@@ -24,18 +24,26 @@ class ProgramAnalyzer:
 
         for contract in slither_instance.contracts:
             for function in contract.functions:
+                print(f"Function: {function.name}")
                 for expression in function.expressions:
-                    if isinstance(expression, AssignmentOperation):
-                        if isinstance(
-                            expression.expression_right,
-                            (BinaryOperation, TupleExpression),
-                        ):
+                    print(f"{expression} -- {ExpressionAnalyzer.contains_binary_operation(
+                            expression=expression
+                        )}")
 
-                            flag = True
+                    
 
-                            ExpressionAnalyzer.find_expression_elementary_type(
-                                expression=expression.expression_right,
-                                test_file_generator=test_file_generator,
-                            )
+                    # if isinstance(expression, AssignmentOperation):
+                    #     if isinstance(
+                    #         expression.expression_right,
+                    #         (BinaryOperation, TupleExpression),
+                    #     ):
+
+                    #         flag = True
+
+                    #         ExpressionAnalyzer.find_expression_elementary_type(
+                    #             expression=expression.expression_right,
+                    #             test_file_generator=test_file_generator,
+                    #         )
+                print("---------------------------------------")
         if flag:
             logger.success(f"Created {test_file_generator.output_filename}")
