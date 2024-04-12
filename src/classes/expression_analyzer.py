@@ -29,9 +29,36 @@ logger.add("loguru.log")
 
 
 class ExpressionAnalyzer:
+
     @staticmethod
-    def type_battle(left: Type, right: Type) -> Type:
-        if left.storage_size[0] > right.storage_size[0]:
+    def get_storage_size(type_str: str) -> int:
+        # Assuming type_str is in the format 'int8', 'uint256', etc.
+        if type_str.startswith("uint"):
+            return int(type_str[4:]) // 8  # Divide by 8 to get the size in bytes
+        elif type_str.startswith("int"):
+            return int(type_str[3:]) // 8  # Divide by 8 to get the size in bytes
+        else:
+            raise ValueError("Invalid type string")
+
+    @staticmethod
+    def type_battle(left, right):
+        left_size = right_size = (
+            0  # Default size for cases where left or right is a string.
+        )
+
+        # Determine storage size for left
+        if isinstance(left, str):
+            left_size = ExpressionAnalyzer.get_storage_size(left)
+        elif isinstance(left, Type):
+            left_size = left.storage_size[0]
+
+        # Determine storage size for right
+        if isinstance(right, str):
+            right_size = ExpressionAnalyzer.get_storage_size(right)
+        elif isinstance(right, Type):
+            right_size = right.storage_size[0]
+
+        if left_size > right_size:
             return left
         else:
             return right
@@ -67,6 +94,8 @@ class ExpressionAnalyzer:
                 expression=right_expression, test_file_generator=test_file_generator
             )
 
+            print(f"{right_expression} -- {right_type}")
+
             winner = cls.type_battle(left=left_type, right=right_type)
 
             inverse_operation = cls.get_inverse_operation(
@@ -89,6 +118,16 @@ class ExpressionAnalyzer:
             ]
 
             return max(types, key=lambda t: t.storage_size[0])
+
+        elif isinstance(expression, CallExpression):
+            for argument in expression.arguments:
+
+                print(type(argument))
+                ExpressionAnalyzer.find_expression_elementary_type(
+                    expression=argument, test_file_generator=test_file_generator
+                )
+
+            return expression.type_call
 
         elif isinstance(expression, Identifier):
             value = expression.value
@@ -120,3 +159,22 @@ class ExpressionAnalyzer:
             )
 
         return False
+
+    @staticmethod
+    def expression_dissector(
+        expression: Expression, test_file_generator: TestFileGenerator
+    ):
+        if isinstance(expression, AssignmentOperation):
+            ExpressionAnalyzer.find_expression_elementary_type(
+                expression=expression.expression_right,
+                test_file_generator=test_file_generator,
+            )
+        if isinstance(expression, CallExpression):
+            for argument in expression.arguments:
+                print(argument)
+                ExpressionAnalyzer.find_expression_elementary_type(
+                    expression=argument, test_file_generator=test_file_generator
+                )
+
+        print(type(expression))
+        print("here")
