@@ -26,19 +26,20 @@ class ProgramAnalyzer:
             for function in contract.functions:
                 print(f"Function: {function.name}")
                 for expression in function.expressions:
-                    print(f"{expression} -- {ExpressionAnalyzer.contains_binary_operation(
-                            expression=expression
-                        )}")
+                    if not ExpressionAnalyzer.contains_binary_operation(
+                        expression=expression
+                    ):
+                        continue
 
-                    
+                    ExpressionAnalyzer.expression_dissector(
+                        expression=expression, test_file_generator=test_file_generator
+                    )
 
                     # if isinstance(expression, AssignmentOperation):
                     #     if isinstance(
                     #         expression.expression_right,
                     #         (BinaryOperation, TupleExpression),
                     #     ):
-
-                    #         flag = True
 
                     #         ExpressionAnalyzer.find_expression_elementary_type(
                     #             expression=expression.expression_right,
