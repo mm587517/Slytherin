@@ -35,16 +35,6 @@ class ProgramAnalyzer:
                         expression=expression, test_file_generator=test_file_generator
                     )
 
-                    # if isinstance(expression, AssignmentOperation):
-                    #     if isinstance(
-                    #         expression.expression_right,
-                    #         (BinaryOperation, TupleExpression),
-                    #     ):
-
-                    #         ExpressionAnalyzer.find_expression_elementary_type(
-                    #             expression=expression.expression_right,
-                    #             test_file_generator=test_file_generator,
-                    #         )
                 print("---------------------------------------")
         if flag:
             logger.success(f"Created {test_file_generator.output_filename}")
