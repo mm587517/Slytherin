@@ -851,3 +851,6 @@
 2024-04-12 14:36:08.934 | DEBUG    | expression_analyzer:contains_binary_operation:154 - a -- <class 'slither.core.expressions.identifier.Identifier'>
 2024-04-12 14:36:08.934 | DEBUG    | expression_analyzer:contains_binary_operation:154 - a -- <class 'slither.core.expressions.identifier.Identifier'>
 2024-04-12 14:36:08.934 | DEBUG    | expression_analyzer:contains_binary_operation:154 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 14:51:08.510 | DEBUG    | expression_analyzer:contains_binary_operation:154 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 14:51:08.510 | DEBUG    | expression_analyzer:contains_binary_operation:154 - a -- <class 'slither.core.expressions.identifier.Identifier'>
+2024-04-12 14:51:08.510 | DEBUG    | expression_analyzer:contains_binary_operation:154 - a -- <class 'slither.core.expressions.identifier.Identifier'>

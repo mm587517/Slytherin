@@ -81,8 +81,6 @@ class ExpressionAnalyzer:
         cls, expression: Expression, test_file_generator: TestFileGenerator
     ) -> Type:
 
-        # logger.debug(f"{expression} -- {type(expression)}")
-
         if isinstance(expression, BinaryOperation):
             left_expresssion = expression.expression_left
             right_expression = expression.expression_right
@@ -151,7 +149,6 @@ class ExpressionAnalyzer:
             for argument in expression.arguments:
                 return ExpressionAnalyzer.contains_binary_operation(expression=argument)
 
-        logger.debug(f"{expression} -- {type(expression)}")
         if isinstance(expression, TupleExpression):
             return any(
                 ExpressionAnalyzer.contains_binary_operation(expression=exp)
