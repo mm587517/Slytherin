@@ -92,8 +92,6 @@ class ExpressionAnalyzer:
                 expression=right_expression, test_file_generator=test_file_generator
             )
 
-            print(f"{right_expression} -- {right_type}")
-
             winner = cls.type_battle(left=left_type, right=right_type)
 
             inverse_operation = cls.get_inverse_operation(
@@ -120,7 +118,6 @@ class ExpressionAnalyzer:
         elif isinstance(expression, CallExpression):
             for argument in expression.arguments:
 
-                print(type(argument))
                 ExpressionAnalyzer.find_expression_elementary_type(
                     expression=argument, test_file_generator=test_file_generator
                 )
@@ -168,7 +165,6 @@ class ExpressionAnalyzer:
             )
         if isinstance(expression, CallExpression):
             for argument in expression.arguments:
-                print(argument)
                 ExpressionAnalyzer.find_expression_elementary_type(
                     expression=argument, test_file_generator=test_file_generator
                 )

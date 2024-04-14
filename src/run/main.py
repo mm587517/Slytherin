@@ -7,14 +7,16 @@ sys.path.append("src/classes")
 
 from program_analyzer import ProgramAnalyzer
 from echidna_runner import EchidnaRunner
+from log_analyzer import LogAnalyzer
 
 
 logger.add("loguru.log")
 
 
-def find_assert_slytherin(filename):
+def find_assert_slytherin(filename: str = "output/test.experiment.sol"):
     try:
         with open(filename, "r") as file:
+            print("here?")
             for line in file:
                 if "assert" in line and "slytherin" in line:
                     print(line.strip())
@@ -23,11 +25,14 @@ def find_assert_slytherin(filename):
 
 
 def main(file_path):
+
     program_analyzer = ProgramAnalyzer(file_path)
     program_analyzer.analyze()
 
     # echidna = EchidnaRunner(file_path="output/test.experiment.sol")
     # echidna.run_echidna()
+
+    LogAnalyzer.analyze_log()
 
 
 if __name__ == "__main__":

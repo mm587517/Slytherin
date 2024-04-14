@@ -18,6 +18,7 @@ class EchidnaRunner:
                     stderr=subprocess.STDOUT,  # Merge stderr into stdout
                 )
 
+                # waiting time for asserts
                 time.sleep(10)
 
                 echidna_process.send_signal(subprocess.signal.SIGINT)

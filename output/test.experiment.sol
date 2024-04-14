@@ -5,9 +5,9 @@ contract Contract {
         return a;
     }
 
-    function caller()public pure returns (uint256) {        
-        assert (2 <= type(uint256).max - 1); //slytherin 1
-        uint a = 2 + 1;
+    function caller(uint b)public pure returns (uint256) {        
+        assert (b <= type(uint256).max - 1); //slytherin 1
+        uint a = b+1;
         assert (a <= type(uint256).max - a); //slytherin 2
         assert (1 <= type(uint256).max - callee(a + a)); //slytherin 3
         return callee(1+ callee(a+a));

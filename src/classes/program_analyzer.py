@@ -24,7 +24,6 @@ class ProgramAnalyzer:
 
         for contract in slither_instance.contracts:
             for function in contract.functions:
-                print(f"Function: {function.name}")
                 for expression in function.expressions:
                     if not ExpressionAnalyzer.contains_binary_operation(
                         expression=expression
@@ -35,6 +34,5 @@ class ProgramAnalyzer:
                         expression=expression, test_file_generator=test_file_generator
                     )
 
-                print("---------------------------------------")
         if flag:
             logger.success(f"Created {test_file_generator.output_filename}")

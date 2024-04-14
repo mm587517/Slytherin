@@ -5,7 +5,7 @@ from echidna_runner import EchidnaRunner
 class FileModifier:
     def __init__(self, filename):
         self.filename = filename
-        open("echidna_output.log", "w").close()
+        open("echidna_output.log", "w").close()  # clears file before every run
 
     def comment_line(self, line):
         return f"// {line.strip()}\n"

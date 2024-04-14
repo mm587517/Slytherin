@@ -5,8 +5,8 @@ contract Contract {
         return a;
     }
 
-    function caller()public pure returns (uint256) {        
-        uint a = 2 + 1;
+    function caller(uint b)public pure returns (uint256) {        
+        uint a = b+1;
         return callee(1+ callee(a+a));
     }
 }
