@@ -1,4 +1,3 @@
-import re
 from echidna_runner import EchidnaRunner
 from log_analyzer import LogAnalyzer
 from loguru import logger

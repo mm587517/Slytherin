@@ -1,6 +1,7 @@
 import subprocess
-from loguru import logger
 import time
+
+from loguru import logger
 
 
 class EchidnaRunner:
