@@ -10,6 +10,7 @@ from slither.core.expressions.expression import Expression
 from slither.core.expressions.identifier import Identifier
 from slither.core.expressions.literal import Literal
 from slither.core.expressions.tuple_expression import TupleExpression
+from slither.core.expressions.type_conversion import TypeConversion
 from slither.core.solidity_types.type import Type
 from slither.core.variables.variable import Variable
 from test_file_generator import TestFileGenerator
@@ -144,6 +145,11 @@ class ExpressionAnalyzer:
                 for exp in expression.expressions
             )
 
+        if isinstance(expression, TypeConversion):
+            return ExpressionAnalyzer.contains_binary_operation(
+                expression=expression.expression
+            )
+
         return False
 
     @staticmethod
@@ -166,3 +172,9 @@ class ExpressionAnalyzer:
                 ExpressionAnalyzer.find_expression_elementary_type(
                     expression=argument, test_file_generator=test_file_generator
                 )
+
+        elif isinstance(expression, TypeConversion):
+            ExpressionAnalyzer.find_expression_elementary_type(
+                expression=expression.expression,
+                test_file_generator=test_file_generator,
+            )

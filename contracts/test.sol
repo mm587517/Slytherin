@@ -10,15 +10,25 @@ contract Contract {
     //     return callee(1+ callee(a+a));
     // }
 
+    // function idk() public pure returns (uint) {
+    //    uint64 a = 12345;
+    //    uint64 b = 1e18;
+
+
+
+    //     return a * b;
+    // }
+
+
+
     function idk() public pure returns (uint) {
        uint64 a = 12345;
        uint64 b = 1e18;
 
 
 
-        return a * b;
+        return uint(a * b);
     }
-
 
 
 }

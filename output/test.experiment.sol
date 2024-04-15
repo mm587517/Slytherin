@@ -10,16 +10,27 @@ contract Contract {
     //     return callee(1+ callee(a+a));
     // }
 
+    // function idk() public pure returns (uint) {
+    //    uint64 a = 12345;
+    //    uint64 b = 1e18;
+
+
+
+assert (a <= type(uint64).max / b); //slytherin 1
+    //     return a * b;
+    // }
+
+
+
     function idk() public pure returns (uint) {
        uint64 a = 12345;
        uint64 b = 1e18;
 
 
 
-assert (a <= type(uint64).max / b); //slytherin 1
-        return a * b;
+assert (a <= type(uint64).max / b); //slytherin 2
+        return uint(a * b);
     }
-
 
 
 }

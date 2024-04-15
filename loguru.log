@@ -1127,3 +1127,12 @@
 2024-04-15 19:48:32.022 | INFO     | file_modifier:find_and_comment:58 - slytherin 1
 2024-04-15 19:48:32.022 | INFO     | file_modifier:find_and_comment:58 - slytherin 1
 2024-04-15 19:48:32.022 | INFO     | file_modifier:find_and_comment:58 - slytherin 1
+2024-04-15 19:55:25.915 | DEBUG    | echidna_runner:run_echidna:26 - Sent ESC character signal to Echidna process.
+2024-04-15 19:55:25.915 | DEBUG    | echidna_runner:run_echidna:26 - Sent ESC character signal to Echidna process.
+2024-04-15 19:55:25.915 | DEBUG    | echidna_runner:run_echidna:26 - Sent ESC character signal to Echidna process.
+2024-04-15 19:55:35.929 | DEBUG    | echidna_runner:run_echidna:26 - Sent ESC character signal to Echidna process.
+2024-04-15 19:55:35.929 | DEBUG    | echidna_runner:run_echidna:26 - Sent ESC character signal to Echidna process.
+2024-04-15 19:55:35.929 | DEBUG    | echidna_runner:run_echidna:26 - Sent ESC character signal to Echidna process.
+2024-04-15 19:55:35.934 | INFO     | file_modifier:find_and_comment:58 - slytherin 2
+2024-04-15 19:55:35.934 | INFO     | file_modifier:find_and_comment:58 - slytherin 2
+2024-04-15 19:55:35.934 | INFO     | file_modifier:find_and_comment:58 - slytherin 2
