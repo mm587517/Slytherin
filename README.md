@@ -92,7 +92,7 @@ python3 src/run/main.py --input contracts/example.sol --output output/example.ex
 
 The input is the name of the file we wish to examine. The output is the same file but we need to add ".experiment" to the file name. 
 
-Our tool runs the fuzzer and tells the developer which case failed. In this case it is `slytherin 1`
+Our tool runs the fuzzer and tells the developer which case failed. In this case it is `slytherin 1`:
 
 ```bash
 2024-04-15 19:18:46.925 | DEBUG    | echidna_runner:run_echidna:26 - Sent ESC character signal to Echidna process.
