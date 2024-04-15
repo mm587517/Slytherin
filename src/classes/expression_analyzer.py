@@ -155,12 +155,14 @@ class ExpressionAnalyzer:
                 expression=expression.expression_right,
                 test_file_generator=test_file_generator,
             )
-        if isinstance(expression, CallExpression):
+
+        elif isinstance(expression, BinaryOperation):
+            ExpressionAnalyzer.find_expression_elementary_type(
+                expression=expression, test_file_generator=test_file_generator
+            )
+
+        elif isinstance(expression, CallExpression):
             for argument in expression.arguments:
                 ExpressionAnalyzer.find_expression_elementary_type(
                     expression=argument, test_file_generator=test_file_generator
                 )
-        if isinstance(expression, BinaryOperation):
-            ExpressionAnalyzer.find_expression_elementary_type(
-                expression=expression, test_file_generator=test_file_generator
-            )
