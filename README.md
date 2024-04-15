@@ -30,7 +30,7 @@ test cases will be using Solidity 0.7.6
 
 ```bash
 solc-select install 0.7.6
-solc-select use 0.7.7
+solc-select use 0.7.6
 ```
 
 
