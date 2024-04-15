@@ -25,6 +25,15 @@ Automatic test case generator to detect invalid casting.
 
 For more information about the Slither API, check [https://github.com/crytic/slither](https://github.com/crytic/slither).
 
+**Note:** Make sure to have the correct version of the solidity compiler. For this you can use `solc-select`. Example of our 
+test cases will be using Solidity 0.7.6
+
+```bash
+solc-select install 0.7.6
+solc-select use 0.7.7
+```
+
+
 ## Usage
 
 Usage is simple. Run the main located in `src/run/main.py`. It requires an input argument, which is a solidity file. Files are located in the "contracts" directory located in the root directory. Here is an example of how to run:
