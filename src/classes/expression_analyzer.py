@@ -160,3 +160,7 @@ class ExpressionAnalyzer:
                 ExpressionAnalyzer.find_expression_elementary_type(
                     expression=argument, test_file_generator=test_file_generator
                 )
+        if isinstance(expression, BinaryOperation):
+            ExpressionAnalyzer.find_expression_elementary_type(
+                expression=expression, test_file_generator=test_file_generator
+            )

@@ -1,16 +1,26 @@
 pragma solidity 0.7.6;
 
 contract Contract {
-   
-    function example () public pure returns (uint) {
-        uint64 a = 12345;
-        uint64 b = 1e18;
+    // function callee(uint a) public pure returns (uint256){
+    //     return a;
+    // }
 
-        assert (a <= type(uint256).max / b); //slytherin 1
-        uint c = a * b;
-        
-        return c;
+    // function caller(uint b)public pure returns (uint256) {        
+    //     uint a = b+1;
+    //     return callee(1+ callee(a+a));
+    // }
+
+    function idk() public pure returns (uint) {
+       uint64 a = 12345;
+       uint64 b = 1e18;
+
+
+
+assert (a <= type(uint64).max / b); //slytherin 1
+        return a * b;
     }
+
+
 
 }
 

@@ -20,6 +20,7 @@ class ProgramAnalyzer:
             for function in contract.functions:
 
                 for expression in function.expressions:
+
                     if not ExpressionAnalyzer.contains_binary_operation(
                         expression=expression
                     ):

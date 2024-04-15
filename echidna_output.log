@@ -1,14 +1,14 @@
-[2024-04-15 19:18:36.97] Compiling output/example.experiment.sol... Done! (0.257576s)
-Analyzing contract: /Users/marce/Documents/OSU/courses/CSE-5472-InfoSec-Project/output/example.experiment.sol:Contract
-[2024-04-15 19:18:37.25] Running slither on output/example.experiment.sol... Done! (0.329366s)
-[2024-04-15 19:18:37.59] [Worker 0] Test example() falsified!
-[2024-04-15 19:18:37.63] [Worker 0] New coverage: 59 instr, 1 contracts, 1 seqs in corpus
-[2024-04-15 19:18:37.71] [Worker 0] New coverage: 62 instr, 1 contracts, 2 seqs in corpus
-[2024-04-15 19:18:38.76] [Worker 0] Test limit reached. Stopping.
-[2024-04-15 19:18:38.76] [status] tests: 1/2, fuzzing: 50009/50000, values: [], cov: 62, corpus: 2
-example(): failed!💥  
+[2024-04-15 19:48:22.06] Compiling output/test.experiment.sol... Done! (0.249258s)
+Analyzing contract: /Users/marce/Documents/OSU/courses/CSE-5472-InfoSec-Project/output/test.experiment.sol:Contract
+[2024-04-15 19:48:22.33] Running slither on output/test.experiment.sol... Done! (0.349316s)
+[2024-04-15 19:48:22.69] [Worker 0] Test idk() falsified!
+[2024-04-15 19:48:22.73] [Worker 0] New coverage: 59 instr, 1 contracts, 1 seqs in corpus
+[2024-04-15 19:48:22.78] [Worker 0] New coverage: 62 instr, 1 contracts, 2 seqs in corpus
+[2024-04-15 19:48:23.86] [Worker 0] Test limit reached. Stopping.
+[2024-04-15 19:48:23.86] [status] tests: 1/2, fuzzing: 50017/50000, values: [], cov: 62, corpus: 2
+idk(): failed!💥  
   Call sequence:
-    Contract.example()
+    Contract.idk()
 
 Traces: 
 
@@ -18,5 +18,5 @@ AssertionFailed(..): passing
 Unique instructions: 62
 Unique codehashes: 1
 Corpus size: 2
-Seed: 8287372160903758882
+Seed: 3951607296685390242
 

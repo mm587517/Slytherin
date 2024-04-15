@@ -1,4 +1,4 @@
-pragma solidity 0.8.2;
+pragma solidity 0.7.6;
 
 contract Contract {
     // function callee(uint a) public pure returns (uint256){
@@ -10,11 +10,13 @@ contract Contract {
     //     return callee(1+ callee(a+a));
     // }
 
-    function idk(int a) public pure returns (bool) {
-        int b = 1;
-        int c = 5;
-        require (a - b <= c);
-        return true;
+    function idk() public pure returns (uint) {
+       uint64 a = 12345;
+       uint64 b = 1e18;
+
+
+
+        return a * b;
     }
 
 
