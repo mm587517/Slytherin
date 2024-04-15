@@ -18,6 +18,7 @@ contract FlashloanContract {
         require(token.transfer(_receiver, _amount), "Transfer failed");
         
         uint256 balanceAfter = token.balanceOf(address(this));
+assert (balanceBefore <= type(uint256).max + _amount); //slytherin 1
         require(balanceBefore - _amount == balanceAfter, "Burn failed");
         
         emit Burn(_receiver, _amount);
@@ -26,6 +27,7 @@ contract FlashloanContract {
     function flashloan(uint256 amount, uint256 fee) external {
         address receiver = msg.sender;
 
+assert (amount <= type(uint256).max - fee); //slytherin 2
         _burn(receiver,  amount + fee);
     }
 }
