@@ -1,50 +1,47 @@
-[2024-04-14 15:53:56.55] Compiling output/test.experiment.sol... Done! (0.323974s)
-Analyzing contract: /Users/marce/Documents/OSU/courses/CSE-5472-InfoSec-Project/output/test.experiment.sol:Contract
-[2024-04-14 15:53:56.90] Running slither on output/test.experiment.sol... Done! (0.462963s)
-[2024-04-14 15:53:57.37] [Worker 0] Test caller(uint256) falsified!
-[2024-04-14 15:53:57.40] [Worker 0] New coverage: 315 instr, 1 contracts, 1 seqs in corpus
-[2024-04-14 15:53:57.45] [Worker 0] New coverage: 348 instr, 1 contracts, 2 seqs in corpus
-[2024-04-14 15:53:57.50] [Worker 0] New coverage: 351 instr, 1 contracts, 3 seqs in corpus
-[2024-04-14 15:54:00.36] [status] tests: 1/3, fuzzing: 22770/50000, values: [], cov: 351, corpus: 3
-[2024-04-14 15:54:00.51] [Worker 0] Killed (thread killed). Stopping.
-[2024-04-14 15:54:00.51] [status] tests: 1/3, fuzzing: 24108/50000, values: [], cov: 351, corpus: 3
-callee(uint256): passing
-caller(uint256): failed!💥  
-  Call sequence:
-    Contract.caller(115792089237316195423570985008687907853269984665640564039457584007913129639935)
-
-Traces: 
-
+[2024-04-15 16:35:10.57] Compiling output/test.experiment.sol... Done! (0.263375s)
+Multiple contracts found, only analyzing the first
+Analyzing contract: /Users/marce/Documents/OSU/courses/CSE-5472-InfoSec-Project/output/test.experiment.sol:FlashloanContract
+[2024-04-15 16:35:10.91] Running slither on output/test.experiment.sol... Done! (0.422247s)
+[2024-04-15 16:35:11.35] [Worker 0] New coverage: 297 instr, 1 contracts, 1 seqs in corpus
+[2024-04-15 16:35:11.45] [Worker 0] New coverage: 335 instr, 1 contracts, 2 seqs in corpus
+[2024-04-15 16:35:11.72] [Worker 0] New coverage: 338 instr, 1 contracts, 3 seqs in corpus
+[2024-04-15 16:35:14.34] [status] tests: 0/3, fuzzing: 26799/50000, values: [], cov: 338, corpus: 3
+[2024-04-15 16:35:16.94] [Worker 0] Test limit reached. Stopping.
+[2024-04-15 16:35:16.94] [status] tests: 0/3, fuzzing: 50054/50000, values: [], cov: 338, corpus: 3
+flashloan(uint256,uint256): passing
+tokenAddress(): passing
 AssertionFailed(..): passing
 
 
-Unique instructions: 351
+Unique instructions: 338
 Unique codehashes: 1
 Corpus size: 3
-Seed: 8246653906651111111
+Seed: 7801335943791223460
 
-[2024-04-14 16:07:05.64] Compiling output/test.experiment.sol... Done! (0.259786s)
-Analyzing contract: /Users/marce/Documents/OSU/courses/CSE-5472-InfoSec-Project/output/test.experiment.sol:Contract
-[2024-04-14 16:07:05.92] Running slither on output/test.experiment.sol... Done! (0.410176s)
-[2024-04-14 16:07:06.37] [Worker 0] Test caller(uint256) falsified!
-[2024-04-14 16:07:06.39] [Worker 0] New coverage: 353 instr, 1 contracts, 1 seqs in corpus
-[2024-04-14 16:07:06.62] [Worker 0] New coverage: 386 instr, 1 contracts, 2 seqs in corpus
-[2024-04-14 16:07:09.33] [status] tests: 1/3, fuzzing: 18389/50000, values: [], cov: 386, corpus: 2
-[2024-04-14 16:07:12.34] [status] tests: 1/3, fuzzing: 39402/50000, values: [], cov: 386, corpus: 2
-[2024-04-14 16:07:13.88] [Worker 0] Test limit reached. Stopping.
-[2024-04-14 16:07:13.88] [status] tests: 1/3, fuzzing: 50098/50000, values: [], cov: 386, corpus: 2
-callee(uint256): passing
-caller(uint256): failed!💥  
+[2024-04-15 16:35:20.57] Compiling output/test.experiment.sol... Done! (0.273717s)
+Multiple contracts found, only analyzing the first
+Analyzing contract: /Users/marce/Documents/OSU/courses/CSE-5472-InfoSec-Project/output/test.experiment.sol:FlashloanContract
+[2024-04-15 16:35:20.85] Running slither on output/test.experiment.sol... Done! (0.394927s)
+[2024-04-15 16:35:21.25] [Worker 0] Test flashloan(uint256,uint256) falsified!
+[2024-04-15 16:35:21.26] [Worker 0] New coverage: 340 instr, 1 contracts, 1 seqs in corpus
+[2024-04-15 16:35:21.32] [Worker 0] New coverage: 378 instr, 1 contracts, 2 seqs in corpus
+[2024-04-15 16:35:21.96] [Worker 0] New coverage: 381 instr, 1 contracts, 3 seqs in corpus
+[2024-04-15 16:35:24.24] [status] tests: 1/3, fuzzing: 22793/50000, values: [], cov: 381, corpus: 3
+[2024-04-15 16:35:27.24] [status] tests: 1/3, fuzzing: 48052/50000, values: [], cov: 381, corpus: 3
+[2024-04-15 16:35:27.47] [Worker 0] Test limit reached. Stopping.
+[2024-04-15 16:35:27.47] [status] tests: 1/3, fuzzing: 50060/50000, values: [], cov: 381, corpus: 3
+flashloan(uint256,uint256): failed!💥  
   Call sequence:
-    Contract.caller(57959665699324801008266350001319157399204188401317989440299129108551589905494)
+    FlashloanContract.flashloan(62668601248649950554054317839938033412033408625921236645624208917341526498718,53225598921967781079129075938755422249611271233682656325309262738625142605379)
 
 Traces: 
 
+tokenAddress(): passing
 AssertionFailed(..): passing
 
 
-Unique instructions: 386
+Unique instructions: 381
 Unique codehashes: 1
-Corpus size: 2
-Seed: 408193165835723139
+Corpus size: 3
+Seed: 5626552363772955670
 

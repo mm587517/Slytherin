@@ -22,7 +22,7 @@ class EchidnaRunner:
                 time.sleep(10)
 
                 echidna_process.send_signal(subprocess.signal.SIGINT)
-                logger.info("Sent ESC character signal to Echidna process.")
+                logger.debug("Sent ESC character signal to Echidna process.")
 
         except subprocess.CalledProcessError as e:
             logger.error(f"Echidna failed with error: {e}")

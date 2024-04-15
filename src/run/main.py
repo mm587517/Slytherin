@@ -1,44 +1,33 @@
-import sys
 import argparse
-import subprocess
+import sys
+
 from loguru import logger
 
 sys.path.append("src/classes")
 
-from program_analyzer import ProgramAnalyzer
-from echidna_runner import EchidnaRunner
-from log_analyzer import LogAnalyzer
 
+from file_modifier import FileModifier
+from program_analyzer import ProgramAnalyzer
 
 logger.add("loguru.log")
 
 
-def find_assert_slytherin(filename: str = "output/test.experiment.sol"):
-    try:
-        with open(filename, "r") as file:
-            print("here?")
-            for line in file:
-                if "assert" in line and "slytherin" in line:
-                    print(line.strip())
-    except FileNotFoundError:
-        print(f"File '{filename}' not found.")
+def main(input_file, output_file):
 
-
-def main(file_path):
-
-    program_analyzer = ProgramAnalyzer(file_path)
+    program_analyzer = ProgramAnalyzer(input_file)
     program_analyzer.analyze()
 
-    # echidna = EchidnaRunner(file_path="output/test.experiment.sol")
-    # echidna.run_echidna()
-
-    LogAnalyzer.analyze_log()
+    modifier = FileModifier(output_file)
+    modifier.find_and_comment()
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Program Analyzer")
     parser.add_argument(
-        "-f", "--file", required=True, help="Path to the input file", type=str
+        "-i", "--input", required=True, help="Path to the input file", type=str
+    )
+    parser.add_argument(
+        "-o", "--output", required=True, help="Path to the output file", type=str
     )
     args = parser.parse_args()
-    main(args.file)
+    main(args.input, args.output)

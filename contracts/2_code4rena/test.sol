@@ -1,7 +1,5 @@
 pragma solidity ^0.8.0;
 
-
-
 contract FlashloanContract {
     address public tokenAddress;
     
@@ -13,27 +11,21 @@ contract FlashloanContract {
     }
     
     function _burn(address _receiver, uint256 _amount) internal {
-        // Assume the token is ERC20
+
         IERC20 token = IERC20(tokenAddress);
         uint256 balanceBefore = token.balanceOf(address(this));
         
         require(token.transfer(_receiver, _amount), "Transfer failed");
         
         uint256 balanceAfter = token.balanceOf(address(this));
-assert (balanceBefore <= type(uint256).max + _amount); //slytherin 1
         require(balanceBefore - _amount == balanceAfter, "Burn failed");
         
         emit Burn(_receiver, _amount);
     }
     
     function flashloan(uint256 amount, uint256 fee) external {
-        // Here, you implement your flashloan logic
-        // For demonstration, we will just call _burn with a receiver address and an amount including fee
         address receiver = msg.sender;
 
-        
-        // Assuming receiver is a valid address
-assert (amount <= type(uint256).max - fee); //slytherin 2
         _burn(receiver,  amount + fee);
     }
 }

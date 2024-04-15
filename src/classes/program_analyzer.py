@@ -1,13 +1,7 @@
-from slither.slither import Slither
-from slither.core.expressions.binary_operation import BinaryOperation
-from slither.core.expressions.tuple_expression import TupleExpression
-
-from slither.core.expressions.assignment_operation import AssignmentOperation
-
-from test_file_generator import TestFileGenerator
 from expression_analyzer import ExpressionAnalyzer
-
 from loguru import logger
+from slither.slither import Slither
+from test_file_generator import TestFileGenerator
 
 logger.add("loguru.log")
 
@@ -24,6 +18,7 @@ class ProgramAnalyzer:
 
         for contract in slither_instance.contracts:
             for function in contract.functions:
+
                 for expression in function.expressions:
                     if not ExpressionAnalyzer.contains_binary_operation(
                         expression=expression

@@ -1,29 +1,18 @@
+from loguru import logger
+from slither.core.expressions import *
+from slither.core.expressions.assignment_operation import AssignmentOperation
 from slither.core.expressions.binary_operation import (
     BinaryOperation,
     BinaryOperationType,
 )
-from slither.core.expressions.tuple_expression import TupleExpression
-from slither.core.expressions.literal import Literal
-from slither.core.expressions.identifier import Identifier
-from slither.core.expressions.expression import Expression
-from slither.core.expressions.type_conversion import TypeConversion
-from slither.core.expressions.assignment_operation import AssignmentOperation
 from slither.core.expressions.call_expression import CallExpression
-
-
+from slither.core.expressions.expression import Expression
+from slither.core.expressions.identifier import Identifier
+from slither.core.expressions.literal import Literal
+from slither.core.expressions.tuple_expression import TupleExpression
 from slither.core.solidity_types.type import Type
 from slither.core.variables.variable import Variable
-
-
-from slither.core.expressions import *
-
-
-from IPython import embed
-
-from loguru import logger
-
 from test_file_generator import TestFileGenerator
-
 
 logger.add("loguru.log")
 
@@ -46,13 +35,11 @@ class ExpressionAnalyzer:
             0  # Default size for cases where left or right is a string.
         )
 
-        # Determine storage size for left
         if isinstance(left, str):
             left_size = ExpressionAnalyzer.get_storage_size(left)
         elif isinstance(left, Type):
             left_size = left.storage_size[0]
 
-        # Determine storage size for right
         if isinstance(right, str):
             right_size = ExpressionAnalyzer.get_storage_size(right)
         elif isinstance(right, Type):
@@ -97,6 +84,9 @@ class ExpressionAnalyzer:
             inverse_operation = cls.get_inverse_operation(
                 expression.type,
             )
+
+            if not inverse_operation:
+                return winner
 
             assert_string = f"assert ({left_expresssion} <= type({winner}).max {inverse_operation} {right_expression}); //slytherin"
             test_file_generator.write_line(
@@ -143,8 +133,10 @@ class ExpressionAnalyzer:
                 expression=expression.expression_right
             )
         if isinstance(expression, CallExpression):
-            for argument in expression.arguments:
-                return ExpressionAnalyzer.contains_binary_operation(expression=argument)
+            return any(
+                ExpressionAnalyzer.contains_binary_operation(expression=exp)
+                for exp in expression.arguments
+            )
 
         if isinstance(expression, TupleExpression):
             return any(
