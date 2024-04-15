@@ -1,10 +1,11 @@
-[2024-04-15 19:07:54.52] Compiling output/example.experiment.sol... Done! (0.259702s)
+[2024-04-15 19:18:36.97] Compiling output/example.experiment.sol... Done! (0.257576s)
 Analyzing contract: /Users/marce/Documents/OSU/courses/CSE-5472-InfoSec-Project/output/example.experiment.sol:Contract
-[2024-04-15 19:07:54.79] Running slither on output/example.experiment.sol... Done! (0.346988s)
-[2024-04-15 19:07:55.15] [Worker 0] Test example() falsified!
-[2024-04-15 19:07:55.19] [Worker 0] New coverage: 62 instr, 1 contracts, 1 seqs in corpus
-[2024-04-15 19:07:56.32] [Worker 0] Test limit reached. Stopping.
-[2024-04-15 19:07:56.32] [status] tests: 1/2, fuzzing: 50047/50000, values: [], cov: 62, corpus: 1
+[2024-04-15 19:18:37.25] Running slither on output/example.experiment.sol... Done! (0.329366s)
+[2024-04-15 19:18:37.59] [Worker 0] Test example() falsified!
+[2024-04-15 19:18:37.63] [Worker 0] New coverage: 59 instr, 1 contracts, 1 seqs in corpus
+[2024-04-15 19:18:37.71] [Worker 0] New coverage: 62 instr, 1 contracts, 2 seqs in corpus
+[2024-04-15 19:18:38.76] [Worker 0] Test limit reached. Stopping.
+[2024-04-15 19:18:38.76] [status] tests: 1/2, fuzzing: 50009/50000, values: [], cov: 62, corpus: 2
 example(): failed!💥  
   Call sequence:
     Contract.example()
@@ -16,6 +17,6 @@ AssertionFailed(..): passing
 
 Unique instructions: 62
 Unique codehashes: 1
-Corpus size: 1
-Seed: 2337937976446910411
+Corpus size: 2
+Seed: 8287372160903758882
 

@@ -1,47 +1,115 @@
 # Slytherin
 
-Automatic test case generator to detect invalid casting.
+This document delineates the installation process and utilization guidelines for Slytherin, a tool specifically crafted for range analysis within Solidity smart contracts. Slytherin amalgamates the capabilities of the static analysis tool "Slither" with the smart contract fuzzer "Echidna" to identify and address improper usage of binary expressions.
+
 
 ## Installation
 
-1. Make sure you have Python installed on your system.
-2. Create a Python virtual environment:
+To install Slytherin, adhere to the subsequent steps:
 
-   ```
-   $ python3 -m venv myenv
-   ```
+1. Confirm the presence of Python on your system.
 
-3. Activate the virtual environment:
-
-   ```
-   $ source myenv/bin/activate
-   ```
-
-4. Install the Slither API within the virtual environment:
-
-   ```
-   $ pip3 install slither-analyzer
-   ```
-
-For more information about the Slither API, check [https://github.com/crytic/slither](https://github.com/crytic/slither).
-
-**Note:** Make sure to have the correct version of the solidity compiler. For this you can use `solc-select`. Example of our 
-test cases will be using Solidity 0.7.6
+2. Establish a Python virtual environment through the following command:
 
 ```bash
+  python3 -m venv myenv
+  source myenv/bin/activate
+```
+
+3. Install the Slither API within the virtual environment:
+
+```bash
+python3 -m pip install slither-analyzer
+```
+
+For more information about the Slither API, consult its documentation accessible at https://github.com/crytic/slither.
+
+4. Install the Solidity compiler. Employ solc-select for this purpose.
+
+```bash
+pip3 install solc-select
 solc-select install 0.7.6
-solc-select use 0.7.6
+solc-select use 0.7.7
+```
+In this context, Solidity 0.7.6 is employed for test cases.
+
+5. Ensure Echidna, the smart contract fuzzer, is installed alongside Slither. Should issues arise, consider executing pip3 install slither-analyzer --user. Elaborate information is accessible within the Echidna codebase at https://github.com/crytic/echidna.
+
+6. Install Loguru. 
+```bash
+pip3 install loguru
+```
+## Usage/Examples
+
+For usage let us take a look at the following example. 
+
+```solidity
+pragma solidity 0.7.6;
+
+contract Contract {
+   
+    function example () public pure returns (uint) {
+        uint64 a = 12345;
+        uint64 b = 1e18;
+
+        uint256 c = a * b;
+
+        return c;
+    }
+
+}
+
 ```
 
 
-## Usage
+The line `uint256 c = a * b;` will cause a casting issue. However, this is not picked up by either the Solidty compiler nor Slither. 
 
-Usage is simple. Run the main located in `src/run/main.py`. It requires an input argument, which is a solidity file. Files are located in the "contracts" directory located in the root directory. Here is an example of how to run:
+Our tool looks for these type of binary operations and generates automatic test cases to determine if they are issue. 
+
+```solidity
+pragma solidity 0.7.6;
+
+contract Contract {
+   
+    function example () public pure returns (uint) {
+        uint64 a = 12345;
+        uint64 b = 1e18;
+
+        assert (a <= type(uint256).max / b); //slytherin 1
+        uint c = a * b;
+        
+        return c;
+    }
+
+}
+
+```
+
+In order to run our tool, we use the following command:
+```bash
+python3 src/run/main.py --input contracts/example.sol --output output/example.experiment.sol   
+```
+
+The input is the name of the file we wish to examine. The output is the same file but we need to add ".experiment" to the file name. 
+
+Our tool runs the fuzzer and tells the developer which case failed. In this case it is `slytherin 1`
 
 ```bash
-python3 src/run/main.py --file contracts/test.sol
+2024-04-15 19:18:46.925 | DEBUG    | echidna_runner:run_echidna:26 - Sent ESC character signal to Echidna process.
+2024-04-15 19:18:46.929 | INFO     | file_modifier:find_and_comment:58 - slytherin 1
+================== slytherin 1 ==================
+==================================================
+example(): failed!💥  
+  Call sequence:
+    Contract.example()
+
+Traces: 
+
+AssertionFailed(..): passing
+
+
+Unique instructions: 62
+Unique codehashes: 1
+Corpus size: 2
+Seed: 8287372160903758882
 ```
-
-Replace `contracts/test.sol` with the path to your solidity file.
-
-The output will be in the "output" directory. It will consist of a solidity smart contract with assert statements ready for the Echidna fuzzer.

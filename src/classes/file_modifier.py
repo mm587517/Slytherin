@@ -56,6 +56,7 @@ class FileModifier:
                 if LogAnalyzer.check_failure():
                     test_case_number = self.get_comment(original_line)
                     logger.info(test_case_number)
+                    print(f"================== {test_case_number} ==================")
                     LogAnalyzer.analyze_log()
                 else:
                     # Re-comment the line if the test passes

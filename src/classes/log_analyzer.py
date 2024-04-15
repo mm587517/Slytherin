@@ -13,7 +13,7 @@ class LogAnalyzer:
 
     @staticmethod
     def analyze_log():
-        print("Analyzing log...")
+        # print("Analyzing log...")
         # Define a regex pattern for matching timestamps
         date_pattern = r"\[\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\.\d{2}\]"
 
@@ -25,7 +25,7 @@ class LogAnalyzer:
                 if re.search(date_pattern, line):
                     if capturing_block:
 
-                        print("=" * 50)
+                        # print("=" * 50)
                         print(block_info)
                         print("=" * 50)
                         return
