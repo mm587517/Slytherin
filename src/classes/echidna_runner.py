@@ -27,7 +27,7 @@ class EchidnaRunner:
                 )
 
                 # waiting time for asserts
-                time.sleep(10)
+                time.sleep(5)
 
                 echidna_process.send_signal(subprocess.signal.SIGINT)
                 logger.debug("Sent ESC character signal to Echidna process.")
