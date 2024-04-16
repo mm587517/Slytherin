@@ -12,7 +12,13 @@ from program_analyzer import ProgramAnalyzer
 logger.add("loguru.log")
 
 
-def main(input_file, output_file):
+def main(input_file: str, output_file: str):
+    """Main function to analyze input file, generate and run test cases
+
+    Args:
+        input_file (str): input solidity file
+        output_file (str): output solidty .experiment.sol file
+    """
 
     program_analyzer = ProgramAnalyzer(input_file)
     program_analyzer.analyze()

@@ -5,10 +5,17 @@ from loguru import logger
 
 
 class EchidnaRunner:
-    def __init__(self, file_path):
+
+    def __init__(self, file_path: str):
+        """Initiates the class with the .experiment.sol file passed as argument
+
+        Args:
+            file_path (str): solidity file to be run with Echidna
+        """
         self.file_path = file_path
 
     def run_echidna(self):
+        """Function to run Echidna, and save output for future analysis"""
         try:
             # Open log file for writing
             with open("echidna_output.log", "a") as output_file:
