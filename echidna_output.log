@@ -1,36 +1,18 @@
-[2024-04-15 19:55:15.96] Compiling output/test.experiment.sol... Done! (0.257441s)
-echidna: Couldn't compile given file
-stdout:
-stderr:
-INFO:CryticCompile:'solc --version' running
-INFO:CryticCompile:'solc output/test.experiment.sol --combined-json abi,ast,bin,bin-runtime,srcmap,srcmap-runtime,userdoc,devdoc,hashes,compact-format --allow-paths .,/Users/marce/Documents/OSU/courses/CSE-5472-InfoSec-Project/output' running
-ERROR:CryticCompile:Invalid solc compilation Error: Expected identifier but got '('
-  --> output/test.experiment.sol:19:8:
-   |
-19 | assert (a <= type(uint64).max / b); //slytherin 1
-   |        ^
-
-
-
-[2024-04-15 19:55:25.93] Compiling output/test.experiment.sol... Done! (0.274371s)
-Analyzing contract: /Users/marce/Documents/OSU/courses/CSE-5472-InfoSec-Project/output/test.experiment.sol:Contract
-[2024-04-15 19:55:26.22] Running slither on output/test.experiment.sol... Done! (0.389881s)
-[2024-04-15 19:55:26.63] [Worker 0] Test idk() falsified!
-[2024-04-15 19:55:26.67] [Worker 0] New coverage: 59 instr, 1 contracts, 1 seqs in corpus
-[2024-04-15 19:55:26.69] [Worker 0] New coverage: 62 instr, 1 contracts, 2 seqs in corpus
-[2024-04-15 19:55:27.80] [Worker 0] Test limit reached. Stopping.
-[2024-04-15 19:55:27.80] [status] tests: 1/2, fuzzing: 50008/50000, values: [], cov: 62, corpus: 2
-idk(): failed!💥  
-  Call sequence:
-    Contract.idk()
-
-Traces: 
-
+[2024-04-16 19:10:24.94] Compiling output/test.experiment.sol... Done! (0.238884s)
+Analyzing contract: /Users/marce/Documents/OSU/courses/CSE-5472-InfoSec-Project/output/test.experiment.sol:TestCases
+[2024-04-16 19:10:25.19] Running slither on output/test.experiment.sol... Done! (0.316082s)
+[2024-04-16 19:10:25.51] [Worker 0] New coverage: 99 instr, 1 contracts, 1 seqs in corpus
+[2024-04-16 19:10:25.52] [Worker 0] New coverage: 148 instr, 1 contracts, 2 seqs in corpus
+[2024-04-16 19:10:25.52] [Worker 0] New coverage: 151 instr, 1 contracts, 3 seqs in corpus
+[2024-04-16 19:10:26.89] [Worker 0] Killed (thread killed). Stopping.
+[2024-04-16 19:10:26.89] [status] tests: 0/3, fuzzing: 30512/50000, values: [], cov: 151, corpus: 3
+test2(): passing
+test1(): passing
 AssertionFailed(..): passing
 
 
-Unique instructions: 62
+Unique instructions: 151
 Unique codehashes: 1
-Corpus size: 2
-Seed: 644090733749371294
+Corpus size: 3
+Seed: 784279405592527102
 

@@ -1,35 +1,28 @@
-pragma solidity 0.7.6;
+// SPDX-License-Identifier: GPL-3.0
+ 
+pragma solidity ^0.7.6;
+ 
 
-contract Contract {
-    // function callee(uint a) public pure returns (uint256){
-    //     return a;
-    // }
+contract TestCases {
 
-    // function caller(uint b)public pure returns (uint256) {        
-    //     uint a = b+1;
-    //     return callee(1+ callee(a+a));
-    // }
+    function test1() public pure returns (uint64){
+        uint64 a = 2;
+        uint64 b = 2;
+        
+        uint64 c = (a * b);
+ 
+        return c;
+    }    
 
-    // function idk() public pure returns (uint) {
-    //    uint64 a = 12345;
-    //    uint64 b = 1e18;
-
-
-
-    //     return a * b;
-    // }
-
-
-
-    function idk() public pure returns (uint) {
-       uint64 a = 12345;
-       uint64 b = 1e18;
-
-
-
-        return uint(a * b);
+    function test2() public pure returns (uint256){
+        uint64 a = 12345;
+        uint64 b = 1e18;
+        
+        uint256 c = a * b;
+ 
+        return c;
     }
+    
 
-
+    
 }
-

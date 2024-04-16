@@ -1136,3 +1136,96 @@
 2024-04-15 19:55:35.934 | INFO     | file_modifier:find_and_comment:58 - slytherin 2
 2024-04-15 19:55:35.934 | INFO     | file_modifier:find_and_comment:58 - slytherin 2
 2024-04-15 19:55:35.934 | INFO     | file_modifier:find_and_comment:58 - slytherin 2
+2024-04-16 18:31:59.332 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 18:31:59.332 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 18:31:59.332 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 18:32:09.352 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 18:32:09.352 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 18:32:09.352 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 18:32:09.356 | INFO     | file_modifier:find_and_comment:84 - slytherin 2
+2024-04-16 18:32:09.356 | INFO     | file_modifier:find_and_comment:84 - slytherin 2
+2024-04-16 18:32:09.356 | INFO     | file_modifier:find_and_comment:84 - slytherin 2
+2024-04-16 19:03:32.555 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:03:32.555 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:03:32.555 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:03:32.560 | INFO     | file_modifier:find_and_comment:84 - slytherin 1
+2024-04-16 19:03:32.560 | INFO     | file_modifier:find_and_comment:84 - slytherin 1
+2024-04-16 19:03:32.560 | INFO     | file_modifier:find_and_comment:84 - slytherin 1
+2024-04-16 19:03:42.572 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:03:42.572 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:03:42.572 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:03:42.576 | INFO     | file_modifier:find_and_comment:84 - slytherin 3
+2024-04-16 19:03:42.576 | INFO     | file_modifier:find_and_comment:84 - slytherin 3
+2024-04-16 19:03:42.576 | INFO     | file_modifier:find_and_comment:84 - slytherin 3
+2024-04-16 19:03:52.590 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:03:52.590 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:03:52.590 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:03:52.592 | INFO     | file_modifier:find_and_comment:84 - slytherin 2
+2024-04-16 19:03:52.592 | INFO     | file_modifier:find_and_comment:84 - slytherin 2
+2024-04-16 19:03:52.592 | INFO     | file_modifier:find_and_comment:84 - slytherin 2
+2024-04-16 19:04:02.607 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:04:02.607 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:04:02.607 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:04:02.610 | INFO     | file_modifier:find_and_comment:84 - slytherin 4
+2024-04-16 19:04:02.610 | INFO     | file_modifier:find_and_comment:84 - slytherin 4
+2024-04-16 19:04:02.610 | INFO     | file_modifier:find_and_comment:84 - slytherin 4
+2024-04-16 19:04:50.156 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:04:50.156 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:04:50.156 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:04:50.161 | INFO     | file_modifier:find_and_comment:84 - slytherin 1
+2024-04-16 19:04:50.161 | INFO     | file_modifier:find_and_comment:84 - slytherin 1
+2024-04-16 19:04:50.161 | INFO     | file_modifier:find_and_comment:84 - slytherin 1
+2024-04-16 19:05:00.178 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:05:00.178 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:05:00.178 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:05:00.180 | INFO     | file_modifier:find_and_comment:84 - slytherin 2
+2024-04-16 19:05:00.180 | INFO     | file_modifier:find_and_comment:84 - slytherin 2
+2024-04-16 19:05:00.180 | INFO     | file_modifier:find_and_comment:84 - slytherin 2
+2024-04-16 19:05:39.702 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:05:39.702 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:05:39.702 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:05:39.706 | INFO     | file_modifier:find_and_comment:84 - slytherin 1
+2024-04-16 19:05:39.706 | INFO     | file_modifier:find_and_comment:84 - slytherin 1
+2024-04-16 19:05:39.706 | INFO     | file_modifier:find_and_comment:84 - slytherin 1
+2024-04-16 19:05:49.723 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:05:49.723 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:05:49.723 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:05:49.727 | INFO     | file_modifier:find_and_comment:84 - slytherin 3
+2024-04-16 19:05:49.727 | INFO     | file_modifier:find_and_comment:84 - slytherin 3
+2024-04-16 19:05:49.727 | INFO     | file_modifier:find_and_comment:84 - slytherin 3
+2024-04-16 19:05:59.738 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:05:59.738 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:05:59.738 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:05:59.742 | INFO     | file_modifier:find_and_comment:84 - slytherin 2
+2024-04-16 19:05:59.742 | INFO     | file_modifier:find_and_comment:84 - slytherin 2
+2024-04-16 19:05:59.742 | INFO     | file_modifier:find_and_comment:84 - slytherin 2
+2024-04-16 19:06:09.756 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:06:09.756 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:06:09.756 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:06:09.759 | INFO     | file_modifier:find_and_comment:84 - slytherin 4
+2024-04-16 19:06:09.759 | INFO     | file_modifier:find_and_comment:84 - slytherin 4
+2024-04-16 19:06:09.759 | INFO     | file_modifier:find_and_comment:84 - slytherin 4
+2024-04-16 19:06:50.541 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:06:50.541 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:06:50.541 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:07:02.879 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:07:02.879 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:07:02.879 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:08:41.392 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:08:41.392 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:08:41.392 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:08:51.411 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:08:51.411 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:08:51.411 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:09:01.431 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:09:01.431 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:09:01.431 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:09:01.433 | INFO     | file_modifier:find_and_comment:84 - slytherin 2
+2024-04-16 19:09:01.433 | INFO     | file_modifier:find_and_comment:84 - slytherin 2
+2024-04-16 19:09:01.433 | INFO     | file_modifier:find_and_comment:84 - slytherin 2
+2024-04-16 19:09:11.447 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:09:11.447 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:09:11.447 | DEBUG    | echidna_runner:run_echidna:33 - Sent ESC character signal to Echidna process.
+2024-04-16 19:09:11.449 | INFO     | file_modifier:find_and_comment:84 - slytherin 4
+2024-04-16 19:09:11.449 | INFO     | file_modifier:find_and_comment:84 - slytherin 4
+2024-04-16 19:09:11.449 | INFO     | file_modifier:find_and_comment:84 - slytherin 4
