@@ -75,6 +75,3 @@ class FileModifier:
 
         except FileNotFoundError:
             print(f"File '{self.filename}' not found.")
-
-
-# Example usage:

@@ -22,6 +22,18 @@ class ExpressionAnalyzer:
 
     @staticmethod
     def get_storage_size(type_str: str) -> int:
+        """Function to get the storage size of a type when in string format.
+        (Arguments to functions are like this... it was annoying)
+
+        Args:
+            type_str (str): _description_
+
+        Raises:
+            ValueError: _description_
+
+        Returns:
+            int: _description_
+        """
         # Assuming type_str is in the format 'int8', 'uint256', etc.
         if type_str.startswith("uint"):
             return int(type_str[4:]) // 8  # Divide by 8 to get the size in bytes
@@ -32,6 +44,15 @@ class ExpressionAnalyzer:
 
     @staticmethod
     def type_battle(left, right):
+        """Given two types in a binary expression, determine the overall type of the cast if any.
+
+        Args:
+            left (_type_): type of left expression
+            right (_type_): type of right expression
+
+        Returns:
+            _type_: the type of the overall expression
+        """
         left_size = right_size = (
             0  # Default size for cases where left or right is a string.
         )
@@ -53,6 +74,14 @@ class ExpressionAnalyzer:
 
     @staticmethod
     def get_inverse_operation(operation_type: BinaryOperation) -> BinaryOperationType:
+        """Function determines the inverse of a binary operation. Used to create automatic test cases
+
+        Args:
+            operation_type (BinaryOperation): mathematical operator used
+
+        Returns:
+            BinaryOperationType: _description_
+        """
         if operation_type == BinaryOperationType.ADDITION:
             return BinaryOperationType.SUBTRACTION
         elif operation_type == BinaryOperationType.SUBTRACTION:
@@ -68,6 +97,15 @@ class ExpressionAnalyzer:
     def find_expression_elementary_type(
         cls, expression: Expression, test_file_generator: TestFileGenerator
     ) -> Type:
+        """Function breaks down expressions into different cases to be analyzed and test cases written
+
+        Args:
+            expression (Expression): expression that needs type finding
+            test_file_generator (TestFileGenerator): file to write to
+
+        Returns:
+            Type: type of overall expression
+        """
 
         if isinstance(expression, BinaryOperation):
             left_expresssion = expression.expression_left
@@ -127,6 +165,14 @@ class ExpressionAnalyzer:
 
     @staticmethod
     def contains_binary_operation(expression: Expression) -> bool:
+        """Determines if an expression contains a binary expression
+
+        Args:
+            expression (Expression): expression to be analyzed
+
+        Returns:
+            bool: result if it contains binary expression
+        """
         if isinstance(expression, BinaryOperation):
             return True
         if isinstance(expression, AssignmentOperation):
@@ -156,6 +202,12 @@ class ExpressionAnalyzer:
     def expression_dissector(
         expression: Expression, test_file_generator: TestFileGenerator
     ):
+        """Determines how to proceed with certain expression
+
+        Args:
+            expression (Expression): expression in question
+            test_file_generator (TestFileGenerator): output file
+        """
         if isinstance(expression, AssignmentOperation):
             ExpressionAnalyzer.find_expression_elementary_type(
                 expression=expression.expression_right,
