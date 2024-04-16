@@ -5,28 +5,54 @@ from loguru import logger
 
 class FileModifier:
     def __init__(self, filename):
+        """Determines the file to be used for experiments
+
+        Args:
+            filename (_type_): experiment run
+        """
         self.filename = filename
         # Clears file before every run
         with open("echidna_output.log", "w") as log_file:
             log_file.close()
 
-    def comment_line(self, line):
-        """Comment a given line of code."""
+    def comment_line(self, line: str) -> str:
+        """Comments out line in experiment file
+
+        Args:
+            line (str): line to be commented out
+        Returns:
+            str: new line with comment
+        """
         return f"// {line.strip()}\n"
 
-    def uncomment_line(self, line):
-        """Uncomment a given line of code."""
+    def uncomment_line(self, line: str) -> str:
+        """Uncomments out line in experiment file
+
+        Args:
+            line (str): line to uncomment
+
+        Returns:
+            str: new uncommented line
+        """
         return line.lstrip("//").strip() + "\n"
 
-    def get_comment(self, string):
-        """Retrieve comment from a string."""
-        comment_index = string.find("//")
+    def get_comment(self, line: str) -> str:
+        """Retrieves the comment of a line -- used to determine test case number
+
+        Args:
+            line (str): line to be analyzed
+
+        Returns:
+            str: actual comment
+        """
+
+        comment_index = line.find("//")
         if comment_index != -1:
-            return string[comment_index + 2 :].strip()
-        return "No comment found in the string."
+            return line[comment_index + 2 :].strip()
+        return "No comment found in the line."
 
     def find_and_comment(self):
-        """Find specific lines, comment them, run tests, and uncomment based on the result."""
+        """Finds and comments/uncomments all test cases to run one at a time to determine results"""
         try:
             with open(self.filename, "r") as file:
                 lines = file.readlines()

@@ -7,14 +7,18 @@ logger.add("loguru.log")
 
 
 class ProgramAnalyzer:
-    def __init__(self, filename):
+    def __init__(self, filename: str):
+        """Initializes the filename
+
+        Args:
+            filename (str): solidity file to be analyzed
+        """
         self.filename = filename
 
     def analyze(self):
+        """Analyzes all expressions in a file"""
         slither_instance = Slither(self.filename)
         test_file_generator = TestFileGenerator(filename=self.filename)
-
-        flag = False
 
         for contract in slither_instance.contracts:
             for function in contract.functions:
@@ -29,6 +33,3 @@ class ProgramAnalyzer:
                     ExpressionAnalyzer.expression_dissector(
                         expression=expression, test_file_generator=test_file_generator
                     )
-
-        if flag:
-            logger.success(f"Created {test_file_generator.output_filename}")

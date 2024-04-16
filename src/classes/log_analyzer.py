@@ -4,7 +4,12 @@ import re
 class LogAnalyzer:
 
     @staticmethod
-    def check_failure():
+    def check_failure() -> bool:
+        """Checks if echidna output has a failure block to analyze
+
+        Returns:
+            bool: result
+        """
         with open("echidna_output.log", "r") as file:
             for line in file:
                 if "failed!💥" in line:
@@ -13,8 +18,7 @@ class LogAnalyzer:
 
     @staticmethod
     def analyze_log():
-        # print("Analyzing log...")
-        # Define a regex pattern for matching timestamps
+        """Analyzes a log and prints for the developer to quickly view results."""
         date_pattern = r"\[\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\.\d{2}\]"
 
         with open("echidna_output.log", "r") as file:
