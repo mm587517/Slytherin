@@ -1,4 +1,5 @@
 import os
+import re
 
 
 class TestFileGenerator:
@@ -30,9 +31,9 @@ class TestFileGenerator:
         ) as f_out:
             flag = False
 
-            function = f"function {function_name}"
+            pattern = rf"function {function_name}\s*\("
             for line in f_in:
-                if function in line:
+                if re.search(pattern, line):
                     flag = True
                 if self.is_substring(line, target) and flag:
                     # Maintain the same leading whitespaces

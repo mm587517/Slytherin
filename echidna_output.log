@@ -1,42 +1,453 @@
-[2024-04-16 19:20:17.56] Compiling output/test.experiment.sol... Done! (0.233534s)
+[2024-04-16 19:50:05.14] Compiling output/test.experiment.sol... Done! (0.282843s)
 Analyzing contract: /Users/marce/Documents/OSU/courses/CSE-5472-InfoSec-Project/output/test.experiment.sol:TestCases
-[2024-04-16 19:20:17.80] Running slither on output/test.experiment.sol... Done! (0.324681s)
-[2024-04-16 19:20:18.13] [Worker 0] New coverage: 99 instr, 1 contracts, 1 seqs in corpus
-[2024-04-16 19:20:18.23] [Worker 0] New coverage: 102 instr, 1 contracts, 2 seqs in corpus
-[2024-04-16 19:20:18.28] [Worker 0] New coverage: 151 instr, 1 contracts, 3 seqs in corpus
-[2024-04-16 19:20:20.40] [Worker 0] Test limit reached. Stopping.
-[2024-04-16 19:20:20.40] [status] tests: 0/3, fuzzing: 50067/50000, values: [], cov: 151, corpus: 3
+[2024-04-16 19:50:05.52] Running slither on output/test.experiment.sol... Done! (0.389681s)
+[2024-04-16 19:50:05.92] [Worker 0] Test test1() falsified!
+[2024-04-16 19:50:05.92] [Worker 0] New coverage: 70 instr, 1 contracts, 1 seqs in corpus
+[2024-04-16 19:50:05.93] [Worker 0] New coverage: 139 instr, 1 contracts, 2 seqs in corpus
+[2024-04-16 19:50:05.97] [Worker 0] New coverage: 142 instr, 1 contracts, 3 seqs in corpus
+[2024-04-16 19:50:06.02] [Worker 0] New coverage: 206 instr, 1 contracts, 4 seqs in corpus
+[2024-04-16 19:50:06.06] [Worker 0] New coverage: 292 instr, 1 contracts, 5 seqs in corpus
+[2024-04-16 19:50:06.18] [Worker 0] New coverage: 348 instr, 1 contracts, 6 seqs in corpus
+[2024-04-16 19:50:06.23] [Worker 0] New coverage: 402 instr, 1 contracts, 7 seqs in corpus
+[2024-04-16 19:50:06.29] [Worker 0] New coverage: 484 instr, 1 contracts, 8 seqs in corpus
+[2024-04-16 19:50:06.54] [Worker 0] New coverage: 568 instr, 1 contracts, 9 seqs in corpus
+[2024-04-16 19:50:06.75] [Worker 0] New coverage: 624 instr, 1 contracts, 10 seqs in corpus
+[2024-04-16 19:50:06.89] [Worker 0] New coverage: 684 instr, 1 contracts, 11 seqs in corpus
+[2024-04-16 19:50:07.04] [Worker 0] New coverage: 750 instr, 1 contracts, 12 seqs in corpus
+[2024-04-16 19:50:07.15] [Worker 0] New coverage: 802 instr, 1 contracts, 13 seqs in corpus
+[2024-04-16 19:50:07.53] [Worker 0] New coverage: 851 instr, 1 contracts, 14 seqs in corpus
+[2024-04-16 19:50:07.67] [Worker 0] New coverage: 900 instr, 1 contracts, 15 seqs in corpus
+[2024-04-16 19:50:07.69] [Worker 0] New coverage: 951 instr, 1 contracts, 16 seqs in corpus
+[2024-04-16 19:50:07.88] [Worker 0] New coverage: 1017 instr, 1 contracts, 17 seqs in corpus
+[2024-04-16 19:50:08.17] [Worker 0] New coverage: 1068 instr, 1 contracts, 18 seqs in corpus
+[2024-04-16 19:50:08.19] [Worker 0] New coverage: 1124 instr, 1 contracts, 19 seqs in corpus
+[2024-04-16 19:50:08.79] [Worker 0] New coverage: 1182 instr, 1 contracts, 20 seqs in corpus
+[2024-04-16 19:50:08.83] [Worker 0] Test limit reached. Stopping.
+[2024-04-16 19:50:08.83] [status] tests: 1/21, fuzzing: 50069/50000, values: [], cov: 1182, corpus: 20
+test3(): passing
+test5(): passing
+test13(): passing
 test2(): passing
-test1(): passing
-AssertionFailed(..): passing
-
-
-Unique instructions: 151
-Unique codehashes: 1
-Corpus size: 3
-Seed: 5325230952132362126
-
-[2024-04-16 19:20:27.59] Compiling output/test.experiment.sol... Done! (0.261646s)
-Analyzing contract: /Users/marce/Documents/OSU/courses/CSE-5472-InfoSec-Project/output/test.experiment.sol:TestCases
-[2024-04-16 19:20:27.86] Running slither on output/test.experiment.sol... Done! (0.318043s)
-[2024-04-16 19:20:28.18] [Worker 0] Test test2() falsified!
-[2024-04-16 19:20:28.18] [Worker 0] New coverage: 59 instr, 1 contracts, 1 seqs in corpus
-[2024-04-16 19:20:28.21] [Worker 0] New coverage: 113 instr, 1 contracts, 2 seqs in corpus
-[2024-04-16 19:20:28.30] [Worker 0] New coverage: 116 instr, 1 contracts, 3 seqs in corpus
-[2024-04-16 19:20:29.45] [Worker 0] Test limit reached. Stopping.
-[2024-04-16 19:20:29.45] [status] tests: 1/3, fuzzing: 50014/50000, values: [], cov: 116, corpus: 3
-test2(): failed!💥  
+test7(): passing
+test1(): failed!💥  
   Call sequence:
-    TestCases.test2()
+    TestCases.test1()
 
 Traces: 
 
-test1(): passing
+test6(): passing
+test10(): passing
+test4(): passing
+test16(): passing
+test9(): passing
+test18(): passing
+test8(): passing
+test14(): passing
+test19(): passing
+test12(): passing
+test15(): passing
+test20(): passing
+test11(): passing
+test17(): passing
 AssertionFailed(..): passing
 
 
-Unique instructions: 116
+Unique instructions: 1182
 Unique codehashes: 1
-Corpus size: 3
-Seed: 6133138753652734468
+Corpus size: 20
+Seed: 1358877460827725970
+
+[2024-04-16 19:50:10.12] Compiling output/test.experiment.sol... Done! (0.28442s)
+Analyzing contract: /Users/marce/Documents/OSU/courses/CSE-5472-InfoSec-Project/output/test.experiment.sol:TestCases
+[2024-04-16 19:50:10.41] Running slither on output/test.experiment.sol... Done! (0.381239s)
+[2024-04-16 19:50:10.80] [Worker 0] Test test1() falsified!
+[2024-04-16 19:50:10.81] [Worker 0] New coverage: 161 instr, 1 contracts, 1 seqs in corpus
+[2024-04-16 19:50:10.88] [Worker 0] New coverage: 237 instr, 1 contracts, 2 seqs in corpus
+[2024-04-16 19:50:10.91] [Worker 0] New coverage: 240 instr, 1 contracts, 3 seqs in corpus
+[2024-04-16 19:50:11.03] [Worker 0] New coverage: 306 instr, 1 contracts, 4 seqs in corpus
+[2024-04-16 19:50:11.08] [Worker 0] New coverage: 362 instr, 1 contracts, 5 seqs in corpus
+[2024-04-16 19:50:12.27] [Worker 0] New coverage: 446 instr, 1 contracts, 6 seqs in corpus
+[2024-04-16 19:50:12.30] [Worker 0] New coverage: 502 instr, 1 contracts, 7 seqs in corpus
+[2024-04-16 19:50:12.74] [Worker 0] New coverage: 578 instr, 1 contracts, 8 seqs in corpus
+[2024-04-16 19:50:12.81] [Worker 0] New coverage: 627 instr, 1 contracts, 9 seqs in corpus
+[2024-04-16 19:50:13.10] [Worker 0] New coverage: 690 instr, 1 contracts, 10 seqs in corpus
+[2024-04-16 19:50:13.11] [Worker 0] New coverage: 746 instr, 1 contracts, 11 seqs in corpus
+[2024-04-16 19:50:13.21] [Worker 0] New coverage: 806 instr, 1 contracts, 12 seqs in corpus
+[2024-04-16 19:50:13.27] [Worker 0] New coverage: 870 instr, 1 contracts, 13 seqs in corpus
+[2024-04-16 19:50:13.38] [Worker 0] New coverage: 921 instr, 1 contracts, 14 seqs in corpus
+[2024-04-16 19:50:13.74] [Worker 0] New coverage: 973 instr, 1 contracts, 15 seqs in corpus
+[2024-04-16 19:50:13.80] [status] tests: 1/21, fuzzing: 43414/50000, values: [], cov: 973, corpus: 15
+[2024-04-16 19:50:14.26] [Worker 0] Test limit reached. Stopping.
+[2024-04-16 19:50:14.26] [status] tests: 1/21, fuzzing: 50033/50000, values: [], cov: 973, corpus: 15
+test3(): passing
+test5(): passing
+test13(): passing
+test2(): passing
+test7(): passing
+test1(): failed!💥  
+  Call sequence:
+    TestCases.test1()
+
+Traces: 
+
+test6(): passing
+test10(): passing
+test4(): passing
+test16(): passing
+test9(): passing
+test18(): passing
+test8(): passing
+test14(): passing
+test19(): passing
+test12(): passing
+test15(): passing
+test20(): passing
+test11(): passing
+test17(): passing
+AssertionFailed(..): passing
+
+
+Unique instructions: 973
+Unique codehashes: 1
+Corpus size: 15
+Seed: 2927218647002227145
+
+[2024-04-16 19:50:15.13] Compiling output/test.experiment.sol... Done! (0.332688s)
+Analyzing contract: /Users/marce/Documents/OSU/courses/CSE-5472-InfoSec-Project/output/test.experiment.sol:TestCases
+[2024-04-16 19:50:15.47] Running slither on output/test.experiment.sol... Done! (0.392449s)
+[2024-04-16 19:50:15.87] [Worker 0] Test test3() falsified!
+[2024-04-16 19:50:15.87] [Worker 0] Test test1() falsified!
+[2024-04-16 19:50:15.88] [Worker 0] New coverage: 188 instr, 1 contracts, 1 seqs in corpus
+[2024-04-16 19:50:15.89] [Worker 0] New coverage: 257 instr, 1 contracts, 2 seqs in corpus
+[2024-04-16 19:50:16.14] [Worker 0] New coverage: 260 instr, 1 contracts, 3 seqs in corpus
+[2024-04-16 19:50:16.19] [Worker 0] New coverage: 412 instr, 1 contracts, 4 seqs in corpus
+[2024-04-16 19:50:16.45] [Worker 0] New coverage: 468 instr, 1 contracts, 5 seqs in corpus
+[2024-04-16 19:50:16.49] [Worker 0] New coverage: 534 instr, 1 contracts, 6 seqs in corpus
+[2024-04-16 19:50:16.86] [Worker 0] New coverage: 595 instr, 1 contracts, 7 seqs in corpus
+[2024-04-16 19:50:17.09] [Worker 0] New coverage: 661 instr, 1 contracts, 8 seqs in corpus
+[2024-04-16 19:50:17.19] [Worker 0] New coverage: 722 instr, 1 contracts, 9 seqs in corpus
+[2024-04-16 19:50:17.24] [Worker 0] New coverage: 791 instr, 1 contracts, 10 seqs in corpus
+[2024-04-16 19:50:17.37] [Worker 0] New coverage: 842 instr, 1 contracts, 11 seqs in corpus
+[2024-04-16 19:50:17.88] [Worker 0] New coverage: 902 instr, 1 contracts, 12 seqs in corpus
+[2024-04-16 19:50:17.92] [Worker 0] New coverage: 954 instr, 1 contracts, 13 seqs in corpus
+[2024-04-16 19:50:18.27] [Worker 0] New coverage: 1005 instr, 1 contracts, 14 seqs in corpus
+[2024-04-16 19:50:18.47] [Worker 0] New coverage: 1061 instr, 1 contracts, 15 seqs in corpus
+[2024-04-16 19:50:18.86] [status] tests: 2/21, fuzzing: 45715/50000, values: [], cov: 1061, corpus: 15
+[2024-04-16 19:50:19.15] [Worker 0] Test limit reached. Stopping.
+[2024-04-16 19:50:19.15] [status] tests: 2/21, fuzzing: 50076/50000, values: [], cov: 1061, corpus: 15
+test3(): failed!💥  
+  Call sequence:
+    TestCases.test3()
+
+Traces: 
+
+test5(): passing
+test13(): passing
+test2(): passing
+test7(): passing
+test1(): failed!💥  
+  Call sequence:
+    TestCases.test1()
+
+Traces: 
+
+test6(): passing
+test10(): passing
+test4(): passing
+test16(): passing
+test9(): passing
+test18(): passing
+test8(): passing
+test14(): passing
+test19(): passing
+test12(): passing
+test15(): passing
+test20(): passing
+test11(): passing
+test17(): passing
+AssertionFailed(..): passing
+
+
+Unique instructions: 1061
+Unique codehashes: 1
+Corpus size: 15
+Seed: 8629210238901350118
+
+[2024-04-16 19:50:20.14] Compiling output/test.experiment.sol... Done! (0.335191s)
+Analyzing contract: /Users/marce/Documents/OSU/courses/CSE-5472-InfoSec-Project/output/test.experiment.sol:TestCases
+[2024-04-16 19:50:20.48] Running slither on output/test.experiment.sol... Done! (0.413369s)
+[2024-04-16 19:50:20.90] [Worker 0] Test test3() falsified!
+[2024-04-16 19:50:20.91] [Worker 0] Test test1() falsified!
+[2024-04-16 19:50:20.91] [Worker 0] Test test4() falsified!
+[2024-04-16 19:50:20.91] [Worker 0] New coverage: 230 instr, 1 contracts, 1 seqs in corpus
+[2024-04-16 19:50:21.01] [Worker 0] New coverage: 233 instr, 1 contracts, 2 seqs in corpus
+[2024-04-16 19:50:21.42] [Worker 0] New coverage: 319 instr, 1 contracts, 3 seqs in corpus
+[2024-04-16 19:50:21.45] [Worker 0] New coverage: 385 instr, 1 contracts, 4 seqs in corpus
+[2024-04-16 19:50:21.79] [Worker 0] New coverage: 452 instr, 1 contracts, 5 seqs in corpus
+[2024-04-16 19:50:21.85] [Worker 0] New coverage: 506 instr, 1 contracts, 6 seqs in corpus
+[2024-04-16 19:50:21.96] [Worker 0] New coverage: 557 instr, 1 contracts, 7 seqs in corpus
+[2024-04-16 19:50:21.97] [Worker 0] New coverage: 617 instr, 1 contracts, 8 seqs in corpus
+[2024-04-16 19:50:22.32] [Worker 0] New coverage: 679 instr, 1 contracts, 9 seqs in corpus
+[2024-04-16 19:50:22.42] [Worker 0] New coverage: 743 instr, 1 contracts, 10 seqs in corpus
+[2024-04-16 19:50:23.10] [Worker 0] New coverage: 799 instr, 1 contracts, 11 seqs in corpus
+[2024-04-16 19:50:23.60] [Worker 0] New coverage: 853 instr, 1 contracts, 12 seqs in corpus
+[2024-04-16 19:50:23.90] [status] tests: 3/21, fuzzing: 48812/50000, values: [], cov: 853, corpus: 12
+[2024-04-16 19:50:23.98] [Worker 0] Test limit reached. Stopping.
+[2024-04-16 19:50:23.98] [status] tests: 3/21, fuzzing: 50069/50000, values: [], cov: 853, corpus: 12
+test3(): failed!💥  
+  Call sequence:
+    TestCases.test3()
+
+Traces: 
+
+test5(): passing
+test13(): passing
+test2(): passing
+test7(): passing
+test1(): failed!💥  
+  Call sequence:
+    TestCases.test1()
+
+Traces: 
+
+test6(): passing
+test10(): passing
+test4(): failed!💥  
+  Call sequence:
+    TestCases.test4()
+
+Traces: 
+
+test16(): passing
+test9(): passing
+test18(): passing
+test8(): passing
+test14(): passing
+test19(): passing
+test12(): passing
+test15(): passing
+test20(): passing
+test11(): passing
+test17(): passing
+AssertionFailed(..): passing
+
+
+Unique instructions: 853
+Unique codehashes: 1
+Corpus size: 12
+Seed: 298696206153485263
+
+[2024-04-16 19:50:25.15] Compiling output/test.experiment.sol... Done! (0.297859s)
+Analyzing contract: /Users/marce/Documents/OSU/courses/CSE-5472-InfoSec-Project/output/test.experiment.sol:TestCases
+[2024-04-16 19:50:25.45] Running slither on output/test.experiment.sol... Done! (0.384767s)
+[2024-04-16 19:50:25.85] [Worker 0] Test test3() falsified!
+[2024-04-16 19:50:25.85] [Worker 0] Test test1() falsified!
+[2024-04-16 19:50:25.85] [Worker 0] Test test4() falsified!
+[2024-04-16 19:50:25.85] [Worker 0] Test test5() falsified!
+[2024-04-16 19:50:25.86] [Worker 0] New coverage: 265 instr, 1 contracts, 1 seqs in corpus
+[2024-04-16 19:50:25.88] [Worker 0] New coverage: 268 instr, 1 contracts, 2 seqs in corpus
+[2024-04-16 19:50:25.91] [Worker 0] New coverage: 345 instr, 1 contracts, 3 seqs in corpus
+[2024-04-16 19:50:26.02] [Worker 0] New coverage: 405 instr, 1 contracts, 4 seqs in corpus
+[2024-04-16 19:50:26.06] [Worker 0] New coverage: 461 instr, 1 contracts, 5 seqs in corpus
+[2024-04-16 19:50:26.26] [Worker 0] New coverage: 518 instr, 1 contracts, 6 seqs in corpus
+[2024-04-16 19:50:26.31] [Worker 0] New coverage: 582 instr, 1 contracts, 7 seqs in corpus
+[2024-04-16 19:50:26.36] [Worker 0] New coverage: 645 instr, 1 contracts, 8 seqs in corpus
+[2024-04-16 19:50:26.65] [Worker 0] New coverage: 701 instr, 1 contracts, 9 seqs in corpus
+[2024-04-16 19:50:26.69] [Worker 0] New coverage: 772 instr, 1 contracts, 10 seqs in corpus
+[2024-04-16 19:50:26.93] [Worker 0] New coverage: 832 instr, 1 contracts, 11 seqs in corpus
+[2024-04-16 19:50:27.25] [Worker 0] New coverage: 893 instr, 1 contracts, 12 seqs in corpus
+[2024-04-16 19:50:27.53] [Worker 0] New coverage: 956 instr, 1 contracts, 13 seqs in corpus
+[2024-04-16 19:50:27.89] [Worker 0] New coverage: 1017 instr, 1 contracts, 14 seqs in corpus
+[2024-04-16 19:50:28.43] [Worker 0] New coverage: 1083 instr, 1 contracts, 15 seqs in corpus
+[2024-04-16 19:50:28.84] [status] tests: 4/21, fuzzing: 49438/50000, values: [], cov: 1083, corpus: 15
+[2024-04-16 19:50:28.88] [Worker 0] Test limit reached. Stopping.
+[2024-04-16 19:50:28.88] [status] tests: 4/21, fuzzing: 50052/50000, values: [], cov: 1083, corpus: 15
+test3(): failed!💥  
+  Call sequence:
+    TestCases.test3()
+
+Traces: 
+
+test5(): failed!💥  
+  Call sequence:
+    TestCases.test5()
+
+Traces: 
+
+test13(): passing
+test2(): passing
+test7(): passing
+test1(): failed!💥  
+  Call sequence:
+    TestCases.test1()
+
+Traces: 
+
+test6(): passing
+test10(): passing
+test4(): failed!💥  
+  Call sequence:
+    TestCases.test4()
+
+Traces: 
+
+test16(): passing
+test9(): passing
+test18(): passing
+test8(): passing
+test14(): passing
+test19(): passing
+test12(): passing
+test15(): passing
+test20(): passing
+test11(): passing
+test17(): passing
+AssertionFailed(..): passing
+
+
+Unique instructions: 1083
+Unique codehashes: 1
+Corpus size: 15
+Seed: 3058045910229995579
+
+[2024-04-16 19:50:30.15] Compiling output/test.experiment.sol... Done! (0.303037s)
+Analyzing contract: /Users/marce/Documents/OSU/courses/CSE-5472-InfoSec-Project/output/test.experiment.sol:TestCases
+[2024-04-16 19:50:30.47] Running slither on output/test.experiment.sol... Done! (0.407454s)
+[2024-04-16 19:50:30.88] [Worker 0] Test test5() falsified!
+[2024-04-16 19:50:30.88] [Worker 0] Test test4() falsified!
+[2024-04-16 19:50:30.88] [Worker 0] Test test3() falsified!
+[2024-04-16 19:50:30.88] [Worker 0] Test test1() falsified!
+[2024-04-16 19:50:30.89] [Worker 0] New coverage: 350 instr, 1 contracts, 1 seqs in corpus
+[2024-04-16 19:50:31.03] [Worker 0] New coverage: 436 instr, 1 contracts, 2 seqs in corpus
+[2024-04-16 19:50:31.06] [Worker 0] New coverage: 439 instr, 1 contracts, 3 seqs in corpus
+[2024-04-16 19:50:31.33] [Worker 0] New coverage: 495 instr, 1 contracts, 4 seqs in corpus
+[2024-04-16 19:50:31.72] [Worker 0] New coverage: 556 instr, 1 contracts, 5 seqs in corpus
+[2024-04-16 19:50:31.75] [Worker 0] New coverage: 640 instr, 1 contracts, 6 seqs in corpus
+[2024-04-16 19:50:32.58] [Worker 0] New coverage: 694 instr, 1 contracts, 7 seqs in corpus
+[2024-04-16 19:50:32.69] [Worker 0] New coverage: 754 instr, 1 contracts, 8 seqs in corpus
+[2024-04-16 19:50:32.80] [Worker 0] New coverage: 820 instr, 1 contracts, 9 seqs in corpus
+[2024-04-16 19:50:32.83] [Worker 0] New coverage: 872 instr, 1 contracts, 10 seqs in corpus
+[2024-04-16 19:50:33.64] [Worker 0] New coverage: 928 instr, 1 contracts, 11 seqs in corpus
+[2024-04-16 19:50:33.88] [status] tests: 4/21, fuzzing: 47758/50000, values: [], cov: 928, corpus: 11
+[2024-04-16 19:50:34.02] [Worker 0] Test limit reached. Stopping.
+[2024-04-16 19:50:34.02] [status] tests: 4/21, fuzzing: 50081/50000, values: [], cov: 928, corpus: 11
+test3(): failed!💥  
+  Call sequence:
+    TestCases.test3()
+
+Traces: 
+
+test5(): failed!💥  
+  Call sequence:
+    TestCases.test5()
+
+Traces: 
+
+test13(): passing
+test2(): passing
+test7(): passing
+test1(): failed!💥  
+  Call sequence:
+    TestCases.test1()
+
+Traces: 
+
+test6(): passing
+test10(): passing
+test4(): failed!💥  
+  Call sequence:
+    TestCases.test4()
+
+Traces: 
+
+test16(): passing
+test9(): passing
+test18(): passing
+test8(): passing
+test14(): passing
+test19(): passing
+test12(): passing
+test15(): passing
+test20(): passing
+test11(): passing
+test17(): passing
+AssertionFailed(..): passing
+
+
+Unique instructions: 928
+Unique codehashes: 1
+Corpus size: 11
+Seed: 7225572522555794050
+
+[2024-04-16 19:50:35.17] Compiling output/test.experiment.sol... Done! (0.31368s)
+Analyzing contract: /Users/marce/Documents/OSU/courses/CSE-5472-InfoSec-Project/output/test.experiment.sol:TestCases
+[2024-04-16 19:50:35.49] Running slither on output/test.experiment.sol... Done! (0.413117s)
+[2024-04-16 19:50:35.91] [Worker 0] Test test3() falsified!
+[2024-04-16 19:50:35.91] [Worker 0] Test test1() falsified!
+[2024-04-16 19:50:35.91] [Worker 0] Test test4() falsified!
+[2024-04-16 19:50:35.91] [Worker 0] Test test5() falsified!
+[2024-04-16 19:50:35.92] [Worker 0] New coverage: 365 instr, 1 contracts, 1 seqs in corpus
+[2024-04-16 19:50:35.96] [Worker 0] New coverage: 368 instr, 1 contracts, 2 seqs in corpus
+[2024-04-16 19:50:35.98] [Worker 0] New coverage: 424 instr, 1 contracts, 3 seqs in corpus
+[2024-04-16 19:50:36.28] [Worker 0] New coverage: 501 instr, 1 contracts, 4 seqs in corpus
+[2024-04-16 19:50:36.53] [Worker 0] New coverage: 582 instr, 1 contracts, 5 seqs in corpus
+[2024-04-16 19:50:36.56] [Worker 0] New coverage: 636 instr, 1 contracts, 6 seqs in corpus
+[2024-04-16 19:50:36.80] [Worker 0] New coverage: 704 instr, 1 contracts, 7 seqs in corpus
+[2024-04-16 19:50:36.91] [Worker 0] New coverage: 764 instr, 1 contracts, 8 seqs in corpus
+[2024-04-16 19:50:37.00] [Worker 0] New coverage: 825 instr, 1 contracts, 9 seqs in corpus
+[2024-04-16 19:50:37.15] [Worker 0] New coverage: 877 instr, 1 contracts, 10 seqs in corpus
+[2024-04-16 19:50:37.90] [Worker 0] New coverage: 940 instr, 1 contracts, 11 seqs in corpus
+[2024-04-16 19:50:38.11] [Worker 0] New coverage: 1001 instr, 1 contracts, 12 seqs in corpus
+[2024-04-16 19:50:38.21] [Worker 0] New coverage: 1067 instr, 1 contracts, 13 seqs in corpus
+[2024-04-16 19:50:38.56] [Worker 0] New coverage: 1127 instr, 1 contracts, 14 seqs in corpus
+[2024-04-16 19:50:38.91] [status] tests: 4/21, fuzzing: 48222/50000, values: [], cov: 1127, corpus: 14
+[2024-04-16 19:50:39.02] [Worker 0] Test limit reached. Stopping.
+[2024-04-16 19:50:39.02] [status] tests: 4/21, fuzzing: 50048/50000, values: [], cov: 1127, corpus: 14
+test3(): failed!💥  
+  Call sequence:
+    TestCases.test3()
+
+Traces: 
+
+test5(): failed!💥  
+  Call sequence:
+    TestCases.test5()
+
+Traces: 
+
+test13(): passing
+test2(): passing
+test7(): passing
+test1(): failed!💥  
+  Call sequence:
+    TestCases.test1()
+
+Traces: 
+
+test6(): passing
+test10(): passing
+test4(): failed!💥  
+  Call sequence:
+    TestCases.test4()
+
+Traces: 
+
+test16(): passing
+test9(): passing
+test18(): passing
+test8(): passing
+test14(): passing
+test19(): passing
+test12(): passing
+test15(): passing
+test20(): passing
+test11(): passing
+test17(): passing
+AssertionFailed(..): passing
+
+
+Unique instructions: 1127
+Unique codehashes: 1
+Corpus size: 14
+Seed: 8821262852980148093
 
