@@ -31,5 +31,7 @@ class ProgramAnalyzer:
                         continue
 
                     ExpressionAnalyzer.expression_dissector(
-                        expression=expression, test_file_generator=test_file_generator
+                        expression=expression,
+                        test_file_generator=test_file_generator,
+                        function_name=function.name,
                     )

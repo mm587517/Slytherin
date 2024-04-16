@@ -95,7 +95,10 @@ class ExpressionAnalyzer:
 
     @classmethod
     def find_expression_elementary_type(
-        cls, expression: Expression, test_file_generator: TestFileGenerator
+        cls,
+        expression: Expression,
+        test_file_generator: TestFileGenerator,
+        function_name: str,
     ) -> Type:
         """Function breaks down expressions into different cases to be analyzed and test cases written
 
@@ -112,10 +115,14 @@ class ExpressionAnalyzer:
             right_expression = expression.expression_right
 
             left_type = cls.find_expression_elementary_type(
-                expression=left_expresssion, test_file_generator=test_file_generator
+                expression=left_expresssion,
+                test_file_generator=test_file_generator,
+                function_name=function_name,
             )
             right_type = cls.find_expression_elementary_type(
-                expression=right_expression, test_file_generator=test_file_generator
+                expression=right_expression,
+                test_file_generator=test_file_generator,
+                function_name=function_name,
             )
 
             winner = cls.type_battle(left=left_type, right=right_type)
@@ -129,7 +136,9 @@ class ExpressionAnalyzer:
 
             assert_string = f"assert ({left_expresssion} <= type({winner}).max {inverse_operation} {right_expression}); //slytherin"
             test_file_generator.write_line(
-                target=str(expression), line_to_insert=assert_string
+                target=str(expression),
+                line_to_insert=assert_string,
+                function_name=function_name,
             )
 
             return winner
@@ -137,7 +146,9 @@ class ExpressionAnalyzer:
         elif isinstance(expression, TupleExpression):
             types = [
                 cls.find_expression_elementary_type(
-                    expression=sub_expression, test_file_generator=test_file_generator
+                    expression=sub_expression,
+                    test_file_generator=test_file_generator,
+                    function_name=function_name,
                 )
                 for sub_expression in expression.expressions
             ]
@@ -148,7 +159,9 @@ class ExpressionAnalyzer:
             for argument in expression.arguments:
 
                 ExpressionAnalyzer.find_expression_elementary_type(
-                    expression=argument, test_file_generator=test_file_generator
+                    expression=argument,
+                    test_file_generator=test_file_generator,
+                    function_name=function_name,
                 )
 
             return expression.type_call
@@ -200,7 +213,9 @@ class ExpressionAnalyzer:
 
     @staticmethod
     def expression_dissector(
-        expression: Expression, test_file_generator: TestFileGenerator
+        expression: Expression,
+        test_file_generator: TestFileGenerator,
+        function_name: str,
     ):
         """Determines how to proceed with certain expression
 
@@ -212,21 +227,27 @@ class ExpressionAnalyzer:
             ExpressionAnalyzer.find_expression_elementary_type(
                 expression=expression.expression_right,
                 test_file_generator=test_file_generator,
+                function_name=function_name,
             )
 
         elif isinstance(expression, BinaryOperation):
             ExpressionAnalyzer.find_expression_elementary_type(
-                expression=expression, test_file_generator=test_file_generator
+                expression=expression,
+                test_file_generator=test_file_generator,
+                function_name=function_name,
             )
 
         elif isinstance(expression, CallExpression):
             for argument in expression.arguments:
                 ExpressionAnalyzer.find_expression_elementary_type(
-                    expression=argument, test_file_generator=test_file_generator
+                    expression=argument,
+                    test_file_generator=test_file_generator,
+                    function_name=function_name,
                 )
 
         elif isinstance(expression, TypeConversion):
             ExpressionAnalyzer.find_expression_elementary_type(
                 expression=expression.expression,
                 test_file_generator=test_file_generator,
+                function_name=function_name,
             )

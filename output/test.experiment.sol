@@ -10,7 +10,6 @@ contract TestCases {
         uint64 b = 2;
         
 assert (a <= type(uint64).max / b); //slytherin 1
-// assert (a <= type(uint64).max / b); //slytherin 3
         uint64 c = (a * b);
  
         return c;
@@ -20,8 +19,7 @@ assert (a <= type(uint64).max / b); //slytherin 1
         uint64 a = 12345;
         uint64 b = 1e18;
         
-// assert (a <= type(uint64).max / b); //slytherin 2
-// assert (a <= type(uint64).max / b); //slytherin 4
+assert (a <= type(uint64).max / b); //slytherin 2
         uint256 c = a * b;
  
         return c;
