@@ -33,7 +33,15 @@ solc-select use 0.7.6
 ```
 In this context, Solidity 0.7.6 is employed for test cases.
 
-5. Ensure Echidna, the smart contract fuzzer, is installed alongside Slither. Should issues arise, consider executing pip3 install slither-analyzer --user. Elaborate information is accessible within the Echidna codebase at https://github.com/crytic/echidna.
+5. Ensure Echidna, the smart contract fuzzer, is installed alongside Slither. 
+   The simplest way to install it to use `homebrew` (https://brew.sh/). 
+
+   Install echidna:
+
+   `brew install echidna`
+
+
+   Should issues arise, look at the Echidna codebase at https://github.com/crytic/echidna.
 
 6. Install Loguru. 
 ```bash
