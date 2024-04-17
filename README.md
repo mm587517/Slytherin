@@ -29,7 +29,7 @@ For more information about the Slither API, consult its documentation accessible
 ```bash
 pip3 install solc-select
 solc-select install 0.7.6
-solc-select use 0.7.7
+solc-select use 0.7.6
 ```
 In this context, Solidity 0.7.6 is employed for test cases.
 
