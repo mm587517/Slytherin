@@ -15,17 +15,42 @@ class TestFileGenerator:
         self.number = 1
 
     def create_output_file(self) -> None:
+        """Creates output file for the test cases"""
         with open(self.filename, "r") as f_in, open(self.output_filename, "w") as f_out:
             for line in f_in:
                 f_out.write(line)
 
     def whitespace_remover(self, text: str) -> str:
+        """Removes white spaces in a string
+
+        Args:
+            text (str): text to remove strings
+
+        Returns:
+            str: string with removed white spaces
+        """
         return "".join(text.split())
 
     def is_substring(self, source: str, target: str) -> bool:
+        """Checks if string is substring of another
+
+        Args:
+            source (str): string in question
+            target (str): string we wish to find
+
+        Returns:
+            bool: _description_
+        """
         return self.whitespace_remover(target) in self.whitespace_remover(source)
 
     def write_line(self, target: str, line_to_insert: str, function_name: str) -> None:
+        """Writes a line to a file at certain spot
+
+        Args:
+            target (str): line we wish to write above of
+            line_to_insert (str): line to be written
+            function_name (str): function name to ensure we write in the correct place
+        """
         with open(self.output_filename, "r") as f_in, open(
             self.output_filename + ".temp", "w"
         ) as f_out:
