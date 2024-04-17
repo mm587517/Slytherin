@@ -2,17 +2,17 @@
 
 pragma solidity ^0.7.6;
 
-contract Contract {
+contract CallerTest {
     
     function caller(uint64 a, uint64 b, uint64 c) public pure returns (uint64) {
 // assert (a <= type(uint64).max - b); //slytherin 1
-// assert (a <= type(uint64).max - b); //slytherin 2
+assert (a <= type(uint64).max - b); //slytherin 2
 // assert (a <= type(uint64).max - b); //slytherin 4
 // assert ((a + b) <= type(uint64).max / c); //slytherin 3
 // assert ((a + b) <= type(uint64).max / c); //slytherin 5
 // assert (a <= type(uint64).max + b); //slytherin 6
 // assert (((a + b) * c) <= type(uint64).max * (a - b)); //slytherin 7
-assert (a <= type(uint64).max / b); //slytherin 8
+// assert (a <= type(uint64).max / b); //slytherin 8
         return callee1(a + b, (a + b) * c, ((a + b) * c) / (a - b), a * b);
     }
     

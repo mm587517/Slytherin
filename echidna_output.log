@@ -1,42 +1,44 @@
-[2024-04-16 20:38:47.02] Compiling output/test.experiment.sol... Done! (0.30747s)
-Analyzing contract: /Users/marce/Documents/OSU/courses/CSE-5472-InfoSec-Project/output/test.experiment.sol:TestCases
-[2024-04-16 20:38:47.33] Running slither on output/test.experiment.sol... Done! (0.384119s)
-[2024-04-16 20:38:47.73] [Worker 0] New coverage: 183 instr, 1 contracts, 1 seqs in corpus
-[2024-04-16 20:38:47.75] [Worker 0] New coverage: 186 instr, 1 contracts, 2 seqs in corpus
-[2024-04-16 20:38:47.79] [Worker 0] New coverage: 256 instr, 1 contracts, 3 seqs in corpus
-[2024-04-16 20:38:47.99] [Worker 0] New coverage: 305 instr, 1 contracts, 4 seqs in corpus
-[2024-04-16 20:38:48.14] [Worker 0] New coverage: 376 instr, 1 contracts, 5 seqs in corpus
-[2024-04-16 20:38:48.46] [Worker 0] New coverage: 447 instr, 1 contracts, 6 seqs in corpus
-[2024-04-16 20:38:48.60] [Worker 0] New coverage: 502 instr, 1 contracts, 7 seqs in corpus
-[2024-04-16 20:38:48.64] [Worker 0] New coverage: 562 instr, 1 contracts, 8 seqs in corpus
-[2024-04-16 20:38:48.69] [Worker 0] New coverage: 611 instr, 1 contracts, 9 seqs in corpus
-[2024-04-16 20:38:48.91] [Worker 0] Killed (thread killed). Stopping.
-[2024-04-16 20:38:48.91] [status] tests: 0/21, fuzzing: 14738/50000, values: [], cov: 611, corpus: 9
-test09(): passing
-test01(): passing
-test13(): passing
-test02(): passing
-test06(): passing
-test10(): passing
-test16(): passing
-test04(): passing
-test07(): passing
-test18(): passing
-test03(): passing
-test05(): passing
-test14(): passing
-test19(): passing
-test12(): passing
-test15(): passing
-test08(): passing
-test20(): passing
-test11(): passing
-test17(): passing
+[2024-04-16 20:57:33.10] Compiling output/CallerTest.experiment.sol... Done! (0.260671s)
+Analyzing contract: /Users/marce/Documents/OSU/courses/CSE-5472-InfoSec-Project/output/CallerTest.experiment.sol:CallerTest
+[2024-04-16 20:57:33.37] Running slither on output/CallerTest.experiment.sol... Done! (0.352873s)
+[2024-04-16 20:57:33.72] [Worker 0] Test caller(uint64,uint64,uint64) falsified!
+[2024-04-16 20:57:33.74] [Worker 0] New coverage: 216 instr, 1 contracts, 1 seqs in corpus
+[2024-04-16 20:57:33.77] [Worker 0] New coverage: 216 instr, 1 contracts, 2 seqs in corpus
+[2024-04-16 20:57:33.80] [Worker 0] Test callee1(uint64,uint64,uint64,uint64) falsified!
+[2024-04-16 20:57:33.87] [Worker 0] New coverage: 287 instr, 1 contracts, 3 seqs in corpus
+[2024-04-16 20:57:33.93] [Worker 0] New coverage: 290 instr, 1 contracts, 4 seqs in corpus
+[2024-04-16 20:57:34.22] [Worker 0] New coverage: 423 instr, 1 contracts, 5 seqs in corpus
+[2024-04-16 20:57:34.32] [Worker 0] New coverage: 444 instr, 1 contracts, 6 seqs in corpus
+[2024-04-16 20:57:34.43] [Worker 0] New coverage: 509 instr, 1 contracts, 7 seqs in corpus
+[2024-04-16 20:57:34.47] [Worker 0] New coverage: 590 instr, 1 contracts, 8 seqs in corpus
+[2024-04-16 20:57:34.66] [Worker 0] New coverage: 671 instr, 1 contracts, 9 seqs in corpus
+[2024-04-16 20:57:34.75] [Worker 0] New coverage: 758 instr, 1 contracts, 10 seqs in corpus
+[2024-04-16 20:57:36.72] [status] tests: 2/8, fuzzing: 37435/50000, values: [], cov: 758, corpus: 10
+[2024-04-16 20:57:37.45] [Worker 0] New coverage: 758 instr, 1 contracts, 11 seqs in corpus
+[2024-04-16 20:57:37.60] [Worker 0] Test limit reached. Stopping.
+[2024-04-16 20:57:37.60] [status] tests: 2/8, fuzzing: 50011/50000, values: [], cov: 758, corpus: 11
+complexCallee(uint64,uint64,uint64,uint64): passing
+caller(uint64,uint64,uint64): failed!💥  
+  Call sequence:
+    CallerTest.caller(16323306236166249657,2133139609108114302,0)
+
+Traces: 
+
+callee2(uint64,uint64,uint64): passing
+callee1(uint64,uint64,uint64,uint64): failed!💥  
+  Call sequence:
+    CallerTest.callee1(0,0,0,0)
+
+Traces: 
+
+simpleCaller(uint64,uint64): passing
+simpleCallee(uint64): passing
+complexCaller(uint64,uint64): passing
 AssertionFailed(..): passing
 
 
-Unique instructions: 611
+Unique instructions: 758
 Unique codehashes: 1
-Corpus size: 9
-Seed: 3277325635007671197
+Corpus size: 11
+Seed: 3224690850009942568
 

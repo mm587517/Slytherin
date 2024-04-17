@@ -2,7 +2,7 @@
 
 pragma solidity ^0.7.6;
 
-contract Contract {
+contract CallerTest {
     
     function caller(uint64 a, uint64 b, uint64 c) public pure returns (uint64) {
         return callee1(a + b, (a + b) * c, ((a + b) * c) / (a - b), a * b);
