@@ -84,9 +84,11 @@ class FileModifier:
                     logger.info(test_case_number)
                     print(f"================== {test_case_number} ==================")
                     LogAnalyzer.analyze_log()
-                else:
-                    # Re-comment the line if the test passes
-                    lines[index] = self.comment_line(original_line)
+                # else:
+                #     # Re-comment the line if the test passes
+                lines[index] = self.comment_line(original_line)
+                with open("echidna_output.log", "w") as log_file:
+                    log_file.close()
 
                 # Restore the commented line regardless of the test result
                 with open(self.filename, "w") as file:
