@@ -23,8 +23,6 @@ class ExpressionAnalyzer:
     @staticmethod
     def get_storage_size(type_str: str) -> int:
         """Function to get the storage size of a type when in string format.
-        (Arguments to functions are like this... it was annoying)
-
         Args:
             type_str (str): _description_
 
@@ -105,6 +103,7 @@ class ExpressionAnalyzer:
         Args:
             expression (Expression): expression that needs type finding
             test_file_generator (TestFileGenerator): file to write to
+            function_name (str): Function name for context tracking
 
         Returns:
             Type: type of overall expression
@@ -222,6 +221,7 @@ class ExpressionAnalyzer:
         Args:
             expression (Expression): expression in question
             test_file_generator (TestFileGenerator): output file
+            function_name (str): Function name for context tracking
         """
         if isinstance(expression, AssignmentOperation):
             ExpressionAnalyzer.find_expression_elementary_type(

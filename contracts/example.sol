@@ -6,7 +6,7 @@ contract Contract {
         uint64 a = 12345;
         uint64 b = 1e18;
 
-        uint256 c = a * b;
+        uint64 c = a * b;
 
         return c;
     }
