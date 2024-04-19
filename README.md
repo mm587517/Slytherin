@@ -121,3 +121,12 @@ Unique codehashes: 1
 Corpus size: 2
 Seed: 8287372160903758882
 ```
+
+
+## Evaluation
+
+To run the proof of concept:
+`python3 src/run/main.py --input contracts/example.sol --output output/example.experiment.sol`
+
+To run the code4rena code:
+`python3 src/run/main.py --input contracts/flashloan.sol --output output/flashloan.experiment.sol`
