@@ -1,5 +1,7 @@
 # Slytherin
 
+This project was developed for the Ohio State University course, CSE 5472: Information Security Projects.
+
 This document delineates the installation process and utilization guidelines for Slytherin, a tool specifically crafted for range analysis within Solidity smart contracts. Slytherin amalgamates the capabilities of the static analysis tool "Slither" with the smart contract fuzzer "Echidna" to identify and address improper usage of binary expressions.
 
 
